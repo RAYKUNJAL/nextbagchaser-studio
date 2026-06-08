@@ -2,7 +2,7 @@ node_modules/
 dist/
 dist-server/
 out/
-data/
+/data/
 logs/
 ops/projects/
 public/generated/
