@@ -1,0 +1,112 @@
+{
+  "name": "OPAIJA_STYLE_GOD_MEMORY",
+  "purpose": "Permanent brand/style lock for every future Opaija character, model sheet, prompt, video, thumbnail, and merch concept.",
+  "provenance": {
+    "source": "Current approved Opaija character sheets generated in ChatGPT/OpenAI workflow; uploaded ChatGPT bible sheets are canonical style/identity references",
+    "canonical_style_references": [
+      "/assets/style-references/opaija-character-bible-heroes.png",
+      "/assets/style-references/opaija-character-bible-villains-guardians.png",
+      "/assets/style-references/opaija-premium-action-title-01.png",
+      "/assets/style-references/opaija-premium-action-title-02.png"
+    ],
+    "approved_characters_loaded": [
+      "Kairo \"Kai\" Baptiste",
+      "Nia Toussaint",
+      "Malik St. Hill",
+      "Asha Singh-Baptiste",
+      "Jabari \"Jabs\" Henry",
+      "Tariq Davidson",
+      "Mother Lall",
+      "Papa Etienne Roach",
+      "Marius Vale",
+      "Selah Vale"
+    ]
+  },
+  "style_lock": {
+    "core_style": "2D Caribbean anime model-sheet style",
+    "linework": "clean black ink, animated-series model-sheet clarity, readable silhouettes",
+    "faces": "rounded chins, full lips, broader African and Caribbean nose structures, distinct eyes and face shape per character",
+    "hair": "cool African and island-flavored hairstyles: locs, wraps, beads, shells, braid patterns, Carnival/Kalenda-inspired accents",
+    "palette": "black/charcoal base with controlled gold, orange, red, teal, sea blue, cream, and island-specific accent colors",
+    "wardrobe": "modern Caribbean streetwear fused with Kalenda/Calinda, Carnival, family emblems, island textiles, and practical movement gear",
+    "props": "bois, drums, L-shaped sticks, lavway symbols, bells, sashes, scarves, food/vendor objects, maps, charms, and coded paper sigils",
+    "composition": "professional model sheet with turnaround, action pose, relaxed pose, casual pose, head angles, expressions, gear, color palette, profile, scale notes, and signature line",
+    "animation_need": "duplicable for Seedance/Remotion workflows with consistent proportions, colors, face design, and wardrobe logic"
+  },
+  "premium_trailer_quality_lock": {
+    "source_video": "C:\\Users\\RAY\\Downloads\\raytattoos_httpss.mj.run742034KrasU_Image1_Image2_Image3_Ultr_d730e109-270d-4cca-9f30-ca2cec63b3be_0.mp4",
+    "reference_frames": [
+      "out/reference-style/midjourney-quality/reference-1.png",
+      "out/reference-style/midjourney-quality/reference-2.png",
+      "out/reference-style/midjourney-quality/reference-3.png"
+    ],
+    "target": "premium cinematic 2D Trini anime action-trailer quality",
+    "visual_traits": [
+      "dark charcoal/brown dramatic environments",
+      "controlled gold/orange Opaija energy and staff lightning",
+      "warm rim light, heavy contrast, dramatic shadows, sharp anime/comic finish",
+      "flying debris, cracked ground, impact sparks, readable staff silhouettes",
+      "kinetic low-angle martial poses and expensive franchise-ready trailer framing"
+    ],
+    "character_priority": "The ChatGPT/OpenAI bible sheets in public/assets/characters remain the identity source of truth. The trailer reference controls finish, lighting, camera, energy, and quality only.",
+    "text_rule": "Do not bake generated title text, fake signage, labels, subtitles, or logos into artwork by default. Add title/CTA/captions in Remotion/editor layer.",
+    "crop_rule": "For full-body and action panels, the complete staff/bois must remain visible tip-to-tip with safe margin. Cropped weapons, cropped hands, cropped feet, or cut-off hero silhouettes fail QC."
+  },
+  "negative_lock": [
+    "Do not use pointed V-shaped generic anime chins.",
+    "Do not flatten noses or lips into generic anime features.",
+    "Do not drift into medieval fantasy armor.",
+    "Do not wash out the Caribbean palette.",
+    "Do not remove cultural specificity from Kalenda/Calinda, bois, lavway, drums, gayelle, Carnival, food, island architecture, or folklore.",
+    "Do not invent random symbols that conflict with the Opaija mark system."
+  ],
+  "prompt_core": "Create in the locked OPAIJA 2D Caribbean anime model-sheet style from the supplied ChatGPT bible sheets: rounded chin, full lips, broad African/Caribbean nose language, expressive warm eyes, clean black ink linework, bright island energy, modern Caribbean streetwear fused with Kalenda/Calinda and Carnival-inspired details, controlled gold/orange/red/teal/cream/purple accents as character-appropriate, flat cel-shaded animated-series clarity, duplicable proportions for Seedance and Remotion. For trailers, use premium dark cinematic Trini anime action quality: gold/orange energy, warm rim lighting, debris, cracked ground, kinetic low-angle martial poses, sharp anime/comic finish, and expensive franchise-ready contrast while preserving the exact bible-sheet character design. Keep complete staffs/bois visible tip-to-tip with safe margins in action panels. Do not drift into pseudo-3D, plastic, painterly, photoreal, or generic AI fantasy art."
+  ,
+  "anime_timing_rule": {
+    "status": "mandatory_for_all_anime_builds",
+    "target_wpm": 155,
+    "words_per_second": 2.58,
+    "formula": "words_per_second = target_wpm / 60; narration_duration = scene_word_count / words_per_second; final_clip_duration = narration_duration + pre_action_hold + impact_hold + transition_buffer",
+    "holds": {
+      "pre_action_hold_sec": "0.25-0.5",
+      "impact_hold_sec": "0.3-0.8",
+      "transition_buffer_sec": "0.25-0.5"
+    },
+    "required_artifact": "timing-sheet.json",
+    "hard_gates": [
+      "Do not animate unless every panel has narration, word count, calculated duration, action beat, and final clip duration.",
+      "Seedance duration must come from timing-sheet.json instead of generic storyboard defaults.",
+      "Final edit must trim or extend clips to timing-sheet.json before muxing audio.",
+      "Mark the run timing_failed if final video duration differs from voiceover duration by more than 0.5 seconds."
+    ]
+  },
+  "vertical_power_teaser_rule": {
+    "status": "mandatory_for_character_teaser_builds",
+    "format": "Opaija Power Teaser",
+    "runtime_sec": "20-35",
+    "series_episode_runtime_sec": "60-90",
+    "long_form_rule": "30-minute episodes are compilation specials built later from 20-30 vertical chapters.",
+    "structure": ["hook hit", "identity reveal", "power action", "threat/cliffhanger", "CTA"],
+    "audio_rule": "Use action-first VO with 2-3 short lines max. SFX, music hits, and impacts carry the fight timing.",
+    "required_artifact": "audio-action-beat-sheet.json",
+    "required_beat_fields": [
+      "timecode",
+      "visual action",
+      "camera move",
+      "impact frame",
+      "SFX",
+      "music hit",
+      "voice line",
+      "voice placement",
+      "duration",
+      "character lock",
+      "QC notes"
+    ],
+    "hard_gates": [
+      "Voice lines must land before the action they set up or after the impact they reveal.",
+      "Every impact action needs a synced sound cue.",
+      "Teaser audio, visual, and beat-grid duration must differ by no more than 0.25 seconds.",
+      "No paid animation should start until the audio-action beat sheet, style lock, and storyboard pose prompts pass QC."
+    ]
+  }
+}

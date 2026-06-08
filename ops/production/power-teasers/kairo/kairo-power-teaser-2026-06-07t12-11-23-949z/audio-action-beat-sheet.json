@@ -1,0 +1,110 @@
+{
+  "id": "kairo-power-teaser-2026-06-07t12-11-23-949z",
+  "beats": [
+    {
+      "beatId": "B1",
+      "label": "Hook Hit",
+      "startSec": 0,
+      "endSec": 3.5,
+      "durationSec": 3.5,
+      "visualAction": "Kai drops into a low landing; orange rhythm cracks outward before he speaks.",
+      "cameraMove": "Fast vertical push-in from cracked ground to Kai's eyes.",
+      "impactFrame": "Ground pulse explodes under Kai's sneaker, dust and orange lightning frozen for one frame.",
+      "sfx": "Ground crack, low drum boom, breath catch.",
+      "musicHit": "Single tassa/808 hybrid hit on landing.",
+      "voiceLine": "Trinidad does not wait for permission.",
+      "voicePlacement": "after_impact",
+      "characterLock": "Kairo \"Kai\" Baptiste (Kai) is the only featured character unless another named Opaija character is explicitly requested. Role: Main hero / first Opaija Seed wielder. Island logic: Trinidad. Power: Tempo Pulse + Echo Pulse. Weapon/prop focus: The Listening Bois. Preserve the approved reference art face, hair, skin tone, silhouette, wardrobe language, symbols, weapon scale, and proportions.",
+      "qcNotes": [
+        "Voice placement must match this beat, not generic narration.",
+        "Captions/CTA are editor-layer only.",
+        "Keep The Listening Bois readable when power activates."
+      ]
+    },
+    {
+      "beatId": "B2",
+      "label": "Identity Reveal",
+      "startSec": 3.5,
+      "endSec": 8.5,
+      "durationSec": 5,
+      "visualAction": "The Listening Bois slides into frame; Kai catches it without looking and squares his shoulders.",
+      "cameraMove": "Whip pan following the full staff from tip to Kai's grip.",
+      "impactFrame": "Full staff visible edge-to-edge, Kai's pendant flashing orange.",
+      "sfx": "Wood scrape, pendant chime, cloth whip.",
+      "musicHit": "Rhythm line starts under the catch.",
+      "voiceLine": "Kai Baptiste heard the first pulse.",
+      "voicePlacement": "under_hold",
+      "characterLock": "Kairo \"Kai\" Baptiste (Kai) is the only featured character unless another named Opaija character is explicitly requested. Role: Main hero / first Opaija Seed wielder. Island logic: Trinidad. Power: Tempo Pulse + Echo Pulse. Weapon/prop focus: The Listening Bois. Preserve the approved reference art face, hair, skin tone, silhouette, wardrobe language, symbols, weapon scale, and proportions.",
+      "qcNotes": [
+        "Voice placement must match this beat, not generic narration.",
+        "Captions/CTA are editor-layer only.",
+        "Keep The Listening Bois readable when power activates."
+      ]
+    },
+    {
+      "beatId": "B3",
+      "label": "Power Action",
+      "startSec": 8.5,
+      "endSec": 16.5,
+      "durationSec": 8,
+      "visualAction": "Kai spins the staff once, plants it, and sends a clean rhythm wave across the gayelle.",
+      "cameraMove": "Side tracking into low-angle impact, then one snap zoom on the pulse wave.",
+      "impactFrame": "Staff tip hits ground; orange/gold lightning ring expands without covering Kai's face.",
+      "sfx": "Staff strike, pulse burst, gravel lift, crowd gasp.",
+      "musicHit": "Three drum hits synced to spin, plant, pulse.",
+      "voiceLine": "",
+      "voicePlacement": "none",
+      "characterLock": "Kairo \"Kai\" Baptiste (Kai) is the only featured character unless another named Opaija character is explicitly requested. Role: Main hero / first Opaija Seed wielder. Island logic: Trinidad. Power: Tempo Pulse + Echo Pulse. Weapon/prop focus: The Listening Bois. Preserve the approved reference art face, hair, skin tone, silhouette, wardrobe language, symbols, weapon scale, and proportions.",
+      "qcNotes": [
+        "Voice placement must match this beat, not generic narration.",
+        "Captions/CTA are editor-layer only.",
+        "Keep The Listening Bois readable when power activates."
+      ]
+    },
+    {
+      "beatId": "B4",
+      "label": "Threat Cliffhanger",
+      "startSec": 16.5,
+      "endSec": 23.5,
+      "durationSec": 7,
+      "visualAction": "The orange pulse slams into a black silence ring; Kai looks up as sound cuts out.",
+      "cameraMove": "Rack focus from pulse wave to a dark off-screen silhouette.",
+      "impactFrame": "Orange rhythm wave frozen against black silence edge.",
+      "sfx": "All sound cuts, then one heartbeat.",
+      "musicHit": "Dropout followed by sub hit.",
+      "voiceLine": "But silence was already hunting him.",
+      "voicePlacement": "after_impact",
+      "characterLock": "Kairo \"Kai\" Baptiste (Kai) is the only featured character unless another named Opaija character is explicitly requested. Role: Main hero / first Opaija Seed wielder. Island logic: Trinidad. Power: Tempo Pulse + Echo Pulse. Weapon/prop focus: The Listening Bois. Preserve the approved reference art face, hair, skin tone, silhouette, wardrobe language, symbols, weapon scale, and proportions.",
+      "qcNotes": [
+        "Voice placement must match this beat, not generic narration.",
+        "Captions/CTA are editor-layer only.",
+        "Keep The Listening Bois readable when power activates."
+      ]
+    },
+    {
+      "beatId": "B5",
+      "label": "CTA Hold",
+      "startSec": 23.5,
+      "endSec": 27.5,
+      "durationSec": 4,
+      "visualAction": "Kai holds a ready stance with full staff visible; empty top and bottom space reserved for editor text.",
+      "cameraMove": "Locked hero frame, slight energy shimmer only.",
+      "impactFrame": "Kai in readable hero silhouette, staff uncut, orange cracks behind him.",
+      "sfx": "Rhythm hum, cloth flutter.",
+      "musicHit": "Short resolve with unresolved tail.",
+      "voiceLine": "Opaija begins now.",
+      "voicePlacement": "under_hold",
+      "characterLock": "Kairo \"Kai\" Baptiste (Kai) is the only featured character unless another named Opaija character is explicitly requested. Role: Main hero / first Opaija Seed wielder. Island logic: Trinidad. Power: Tempo Pulse + Echo Pulse. Weapon/prop focus: The Listening Bois. Preserve the approved reference art face, hair, skin tone, silhouette, wardrobe language, symbols, weapon scale, and proportions.",
+      "qcNotes": [
+        "Voice placement must match this beat, not generic narration.",
+        "Captions/CTA are editor-layer only.",
+        "Keep The Listening Bois readable when power activates."
+      ]
+    }
+  ],
+  "audioActionRules": {
+    "maxDriftSec": 0.25,
+    "voiceStyle": "Action-first VO: 2-3 short lines only. SFX and music carry the fight rhythm.",
+    "rule": "Voice lines must land before the action they set up or after the impact they reveal; never run as generic narration across unrelated motion."
+  }
+}

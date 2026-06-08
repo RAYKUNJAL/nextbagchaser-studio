@@ -1,0 +1,465 @@
+{
+  "id": "kairo-power-teaser-2026-06-07t12-13-34-553z",
+  "format": "opaija_power_teaser",
+  "status": "dry_run_ready",
+  "createdAt": "2026-06-07T12:13:34.553Z",
+  "updatedAt": "2026-06-07T12:13:34.553Z",
+  "runtimeTargetSec": {
+    "min": 20,
+    "max": 35,
+    "planned": 27.5
+  },
+  "character": {
+    "id": "kairo",
+    "name": "Kairo \"Kai\" Baptiste",
+    "shortName": "Kai",
+    "role": "Main hero / first Opaija Seed wielder",
+    "power": "Tempo Pulse + Echo Pulse",
+    "weapon": "The Listening Bois",
+    "referencePath": "/assets/characters/kairo-kai-baptiste.png"
+  },
+  "structure": [
+    "hook hit",
+    "identity reveal",
+    "power action",
+    "threat/cliffhanger",
+    "CTA"
+  ],
+  "styleLock": {
+    "source": "public/assets/characters bible sheets",
+    "summary": "Dark cinematic 2D Trini anime with orange/gold rhythm energy, sharp linework, full weapon readability, Afro-Caribbean costume detail.",
+    "required": [
+      "Use Kairo \"Kai\" Baptiste's approved model sheet only.",
+      "Keep The Listening Bois visible in power and combat frames.",
+      "Use full-body or three-quarter action framing when the weapon is active.",
+      "Use gold/orange rhythm lightning, black ink shadows, and Trinidad street/gayelle energy."
+    ],
+    "forbidden": [
+      "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+      "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+      "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+    ]
+  },
+  "audioActionRules": {
+    "maxDriftSec": 0.25,
+    "voiceStyle": "Action-first VO: 2-3 short lines only. SFX and music carry the fight rhythm.",
+    "rule": "Voice lines must land before the action they set up or after the impact they reveal; never run as generic narration across unrelated motion."
+  },
+  "voiceLines": [
+    "Trinidad does not wait for permission.",
+    "Kai Baptiste heard the first pulse.",
+    "But silence was already hunting him."
+  ],
+  "beats": [
+    {
+      "beatId": "B1",
+      "label": "Hook Hit",
+      "startSec": 0,
+      "endSec": 3.5,
+      "durationSec": 3.5,
+      "visualAction": "Kai drops into a low landing; orange rhythm cracks outward before he speaks.",
+      "cameraMove": "Fast vertical push-in from cracked ground to Kai's eyes.",
+      "impactFrame": "Ground pulse explodes under Kai's sneaker, dust and orange lightning frozen for one frame.",
+      "sfx": "Ground crack, low drum boom, breath catch.",
+      "musicHit": "Single tassa/808 hybrid hit on landing.",
+      "voiceLine": "Trinidad does not wait for permission.",
+      "voicePlacement": "after_impact",
+      "characterLock": "Kairo \"Kai\" Baptiste (Kai) is the only featured character unless another named Opaija character is explicitly requested. Role: Main hero / first Opaija Seed wielder. Island logic: Trinidad. Power: Tempo Pulse + Echo Pulse. Weapon/prop focus: The Listening Bois. Preserve the approved reference art face, hair, skin tone, silhouette, wardrobe language, symbols, weapon scale, and proportions.",
+      "qcNotes": [
+        "Voice placement must match this beat, not generic narration.",
+        "Captions/CTA are editor-layer only.",
+        "Keep The Listening Bois readable when power activates."
+      ]
+    },
+    {
+      "beatId": "B2",
+      "label": "Identity Reveal",
+      "startSec": 3.5,
+      "endSec": 8.5,
+      "durationSec": 5,
+      "visualAction": "The Listening Bois slides into frame; Kai catches it without looking and squares his shoulders.",
+      "cameraMove": "Whip pan following the full staff from tip to Kai's grip.",
+      "impactFrame": "Full staff visible edge-to-edge, Kai's pendant flashing orange.",
+      "sfx": "Wood scrape, pendant chime, cloth whip.",
+      "musicHit": "Rhythm line starts under the catch.",
+      "voiceLine": "Kai Baptiste heard the first pulse.",
+      "voicePlacement": "under_hold",
+      "characterLock": "Kairo \"Kai\" Baptiste (Kai) is the only featured character unless another named Opaija character is explicitly requested. Role: Main hero / first Opaija Seed wielder. Island logic: Trinidad. Power: Tempo Pulse + Echo Pulse. Weapon/prop focus: The Listening Bois. Preserve the approved reference art face, hair, skin tone, silhouette, wardrobe language, symbols, weapon scale, and proportions.",
+      "qcNotes": [
+        "Voice placement must match this beat, not generic narration.",
+        "Captions/CTA are editor-layer only.",
+        "Keep The Listening Bois readable when power activates."
+      ]
+    },
+    {
+      "beatId": "B3",
+      "label": "Power Action",
+      "startSec": 8.5,
+      "endSec": 16.5,
+      "durationSec": 8,
+      "visualAction": "Kai spins the staff once, plants it, and sends a clean rhythm wave across the gayelle.",
+      "cameraMove": "Side tracking into low-angle impact, then one snap zoom on the pulse wave.",
+      "impactFrame": "Staff tip hits ground; orange/gold lightning ring expands without covering Kai's face.",
+      "sfx": "Staff strike, pulse burst, gravel lift, crowd gasp.",
+      "musicHit": "Three drum hits synced to spin, plant, pulse.",
+      "voiceLine": "",
+      "voicePlacement": "none",
+      "characterLock": "Kairo \"Kai\" Baptiste (Kai) is the only featured character unless another named Opaija character is explicitly requested. Role: Main hero / first Opaija Seed wielder. Island logic: Trinidad. Power: Tempo Pulse + Echo Pulse. Weapon/prop focus: The Listening Bois. Preserve the approved reference art face, hair, skin tone, silhouette, wardrobe language, symbols, weapon scale, and proportions.",
+      "qcNotes": [
+        "Voice placement must match this beat, not generic narration.",
+        "Captions/CTA are editor-layer only.",
+        "Keep The Listening Bois readable when power activates."
+      ]
+    },
+    {
+      "beatId": "B4",
+      "label": "Threat Cliffhanger",
+      "startSec": 16.5,
+      "endSec": 23.5,
+      "durationSec": 7,
+      "visualAction": "The orange pulse slams into a black silence ring; Kai looks up as sound cuts out.",
+      "cameraMove": "Rack focus from pulse wave to a dark off-screen silhouette.",
+      "impactFrame": "Orange rhythm wave frozen against black silence edge.",
+      "sfx": "All sound cuts, then one heartbeat.",
+      "musicHit": "Dropout followed by sub hit.",
+      "voiceLine": "But silence was already hunting him.",
+      "voicePlacement": "after_impact",
+      "characterLock": "Kairo \"Kai\" Baptiste (Kai) is the only featured character unless another named Opaija character is explicitly requested. Role: Main hero / first Opaija Seed wielder. Island logic: Trinidad. Power: Tempo Pulse + Echo Pulse. Weapon/prop focus: The Listening Bois. Preserve the approved reference art face, hair, skin tone, silhouette, wardrobe language, symbols, weapon scale, and proportions.",
+      "qcNotes": [
+        "Voice placement must match this beat, not generic narration.",
+        "Captions/CTA are editor-layer only.",
+        "Keep The Listening Bois readable when power activates."
+      ]
+    },
+    {
+      "beatId": "B5",
+      "label": "CTA Hold",
+      "startSec": 23.5,
+      "endSec": 27.5,
+      "durationSec": 4,
+      "visualAction": "Kai holds a ready stance with full staff visible; empty top and bottom space reserved for editor text.",
+      "cameraMove": "Locked hero frame, slight energy shimmer only.",
+      "impactFrame": "Kai in readable hero silhouette, staff uncut, orange cracks behind him.",
+      "sfx": "Rhythm hum, cloth flutter.",
+      "musicHit": "Short resolve with unresolved tail.",
+      "voiceLine": "",
+      "voicePlacement": "none",
+      "characterLock": "Kairo \"Kai\" Baptiste (Kai) is the only featured character unless another named Opaija character is explicitly requested. Role: Main hero / first Opaija Seed wielder. Island logic: Trinidad. Power: Tempo Pulse + Echo Pulse. Weapon/prop focus: The Listening Bois. Preserve the approved reference art face, hair, skin tone, silhouette, wardrobe language, symbols, weapon scale, and proportions.",
+      "qcNotes": [
+        "Voice placement must match this beat, not generic narration.",
+        "Captions/CTA are editor-layer only.",
+        "Keep The Listening Bois readable when power activates."
+      ]
+    }
+  ],
+  "storyboardPanels": [
+    {
+      "panelId": "B1-START",
+      "beatId": "B1",
+      "poseType": "start",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: start. Beat: Hook Hit. Action: Kai drops into a low landing; orange rhythm cracks outward before he speaks. Camera: Fast vertical push-in from cracked ground to Kai's eyes.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for Hook Hit start pose."
+    },
+    {
+      "panelId": "B1-IMPACT",
+      "beatId": "B1",
+      "poseType": "impact",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: impact. Beat: Hook Hit. Action: Ground pulse explodes under Kai's sneaker, dust and orange lightning frozen for one frame. Camera: Fast vertical push-in from cracked ground to Kai's eyes.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for Hook Hit impact pose."
+    },
+    {
+      "panelId": "B1-END",
+      "beatId": "B1",
+      "poseType": "end",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: end. Beat: Hook Hit. Action: Recovery/hold pose after the beat, ready for the next cut. Camera: Fast vertical push-in from cracked ground to Kai's eyes.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for Hook Hit end pose."
+    },
+    {
+      "panelId": "B2-START",
+      "beatId": "B2",
+      "poseType": "start",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: start. Beat: Identity Reveal. Action: The Listening Bois slides into frame; Kai catches it without looking and squares his shoulders. Camera: Whip pan following the full staff from tip to Kai's grip.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for Identity Reveal start pose."
+    },
+    {
+      "panelId": "B2-IMPACT",
+      "beatId": "B2",
+      "poseType": "impact",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: impact. Beat: Identity Reveal. Action: Full staff visible edge-to-edge, Kai's pendant flashing orange. Camera: Whip pan following the full staff from tip to Kai's grip.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for Identity Reveal impact pose."
+    },
+    {
+      "panelId": "B2-END",
+      "beatId": "B2",
+      "poseType": "end",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: end. Beat: Identity Reveal. Action: Recovery/hold pose after the beat, ready for the next cut. Camera: Whip pan following the full staff from tip to Kai's grip.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for Identity Reveal end pose."
+    },
+    {
+      "panelId": "B3-START",
+      "beatId": "B3",
+      "poseType": "start",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: start. Beat: Power Action. Action: Kai spins the staff once, plants it, and sends a clean rhythm wave across the gayelle. Camera: Side tracking into low-angle impact, then one snap zoom on the pulse wave.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for Power Action start pose."
+    },
+    {
+      "panelId": "B3-IMPACT",
+      "beatId": "B3",
+      "poseType": "impact",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: impact. Beat: Power Action. Action: Staff tip hits ground; orange/gold lightning ring expands without covering Kai's face. Camera: Side tracking into low-angle impact, then one snap zoom on the pulse wave.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for Power Action impact pose."
+    },
+    {
+      "panelId": "B3-END",
+      "beatId": "B3",
+      "poseType": "end",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: end. Beat: Power Action. Action: Recovery/hold pose after the beat, ready for the next cut. Camera: Side tracking into low-angle impact, then one snap zoom on the pulse wave.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for Power Action end pose."
+    },
+    {
+      "panelId": "B4-START",
+      "beatId": "B4",
+      "poseType": "start",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: start. Beat: Threat Cliffhanger. Action: The orange pulse slams into a black silence ring; Kai looks up as sound cuts out. Camera: Rack focus from pulse wave to a dark off-screen silhouette.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for Threat Cliffhanger start pose."
+    },
+    {
+      "panelId": "B4-IMPACT",
+      "beatId": "B4",
+      "poseType": "impact",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: impact. Beat: Threat Cliffhanger. Action: Orange rhythm wave frozen against black silence edge. Camera: Rack focus from pulse wave to a dark off-screen silhouette.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for Threat Cliffhanger impact pose."
+    },
+    {
+      "panelId": "B4-END",
+      "beatId": "B4",
+      "poseType": "end",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: end. Beat: Threat Cliffhanger. Action: Recovery/hold pose after the beat, ready for the next cut. Camera: Rack focus from pulse wave to a dark off-screen silhouette.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for Threat Cliffhanger end pose."
+    },
+    {
+      "panelId": "B5-START",
+      "beatId": "B5",
+      "poseType": "start",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: start. Beat: CTA Hold. Action: Kai holds a ready stance with full staff visible; empty top and bottom space reserved for editor text. Camera: Locked hero frame, slight energy shimmer only.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for CTA Hold start pose."
+    },
+    {
+      "panelId": "B5-IMPACT",
+      "beatId": "B5",
+      "poseType": "impact",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: impact. Beat: CTA Hold. Action: Kai in readable hero silhouette, staff uncut, orange cracks behind him. Camera: Locked hero frame, slight energy shimmer only.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for CTA Hold impact pose."
+    },
+    {
+      "panelId": "B5-END",
+      "beatId": "B5",
+      "poseType": "end",
+      "prompt": "Vertical 9:16 cinematic 2D Trini anime frame of Kairo \"Kai\" Baptiste. Pose type: end. Beat: CTA Hold. Action: Recovery/hold pose after the beat, ready for the next cut. Camera: Locked hero frame, slight energy shimmer only.. Keep The Listening Bois visible and not cropped when active. Dark cinematic orange/gold rhythm energy, sharp anime linework, Afro-Caribbean wardrobe detail, no text.",
+      "forbidden": [
+        "Do not convert the model sheet into a grid, turnaround, collage, label sheet, or multiple-pose reference page.",
+        "Do not change age, face shape, nose structure, skin tone, hair, core outfit, weapon, or power identity.",
+        "Do not add subtitles, watermark text, logos, random crowds, extra limbs, broken hands, or melted weapon geometry."
+      ],
+      "seedanceRole": "Use as @Image reference for CTA Hold end pose."
+    }
+  ],
+  "seedanceHandoff": {
+    "provider": "openrouter-seedance",
+    "durationSource": "audio-action-beat-sheet",
+    "orderedReferences": [
+      {
+        "imageRef": "@Image1",
+        "panelId": "B1-START",
+        "beatId": "B1",
+        "instruction": "Use as @Image reference for Hook Hit start pose."
+      },
+      {
+        "imageRef": "@Image2",
+        "panelId": "B1-IMPACT",
+        "beatId": "B1",
+        "instruction": "Use as @Image reference for Hook Hit impact pose."
+      },
+      {
+        "imageRef": "@Image3",
+        "panelId": "B1-END",
+        "beatId": "B1",
+        "instruction": "Use as @Image reference for Hook Hit end pose."
+      },
+      {
+        "imageRef": "@Image4",
+        "panelId": "B2-START",
+        "beatId": "B2",
+        "instruction": "Use as @Image reference for Identity Reveal start pose."
+      },
+      {
+        "imageRef": "@Image5",
+        "panelId": "B2-IMPACT",
+        "beatId": "B2",
+        "instruction": "Use as @Image reference for Identity Reveal impact pose."
+      },
+      {
+        "imageRef": "@Image6",
+        "panelId": "B2-END",
+        "beatId": "B2",
+        "instruction": "Use as @Image reference for Identity Reveal end pose."
+      },
+      {
+        "imageRef": "@Image7",
+        "panelId": "B3-START",
+        "beatId": "B3",
+        "instruction": "Use as @Image reference for Power Action start pose."
+      },
+      {
+        "imageRef": "@Image8",
+        "panelId": "B3-IMPACT",
+        "beatId": "B3",
+        "instruction": "Use as @Image reference for Power Action impact pose."
+      },
+      {
+        "imageRef": "@Image9",
+        "panelId": "B3-END",
+        "beatId": "B3",
+        "instruction": "Use as @Image reference for Power Action end pose."
+      },
+      {
+        "imageRef": "@Image10",
+        "panelId": "B4-START",
+        "beatId": "B4",
+        "instruction": "Use as @Image reference for Threat Cliffhanger start pose."
+      },
+      {
+        "imageRef": "@Image11",
+        "panelId": "B4-IMPACT",
+        "beatId": "B4",
+        "instruction": "Use as @Image reference for Threat Cliffhanger impact pose."
+      },
+      {
+        "imageRef": "@Image12",
+        "panelId": "B4-END",
+        "beatId": "B4",
+        "instruction": "Use as @Image reference for Threat Cliffhanger end pose."
+      },
+      {
+        "imageRef": "@Image13",
+        "panelId": "B5-START",
+        "beatId": "B5",
+        "instruction": "Use as @Image reference for CTA Hold start pose."
+      },
+      {
+        "imageRef": "@Image14",
+        "panelId": "B5-IMPACT",
+        "beatId": "B5",
+        "instruction": "Use as @Image reference for CTA Hold impact pose."
+      },
+      {
+        "imageRef": "@Image15",
+        "panelId": "B5-END",
+        "beatId": "B5",
+        "instruction": "Use as @Image reference for CTA Hold end pose."
+      }
+    ],
+    "masterPrompt": "Kairo \"Kai\" Baptiste (Kai) is the only featured character unless another named Opaija character is explicitly requested. Role: Main hero / first Opaija Seed wielder. Island logic: Trinidad. Power: Tempo Pulse + Echo Pulse. Weapon/prop focus: The Listening Bois. Preserve the approved reference art face, hair, skin tone, silhouette, wardrobe language, symbols, weapon scale, and proportions. Use storyboard frames as cinematic production frames, not as character sheets. Maintain the same character identity through every shot and transition. If motion becomes complex, prioritize face stability, hand readability, weapon continuity, and clear silhouette over flashy camera movement. Build a 27.5 second vertical power teaser for Kairo \"Kai\" Baptiste. Follow the audio-action beat sheet exactly. Sync camera moves, impacts, SFX moments, and voice placements to the timecodes. Use start/impact/end references as pose anchors. Do not generate text, logos, subtitles, watermarks, crowds, or reference sheets.",
+    "negativePrompt": "text, letters, subtitles, watermark, logo, cropped staff, missing weapon, face drift, skin tone drift, costume redesign, broken hands, extra fingers, random crowd, reference sheet grid, collage, melted weapon"
+  },
+  "qc": {
+    "status": "passed",
+    "checks": [
+      {
+        "id": "runtime",
+        "status": "passed",
+        "message": "Planned runtime is 27.5s. Required teaser range is 20-35s."
+      },
+      {
+        "id": "voice-density",
+        "status": "passed",
+        "message": "Voiceover is sparse enough for action-first editing."
+      },
+      {
+        "id": "pose-anchors",
+        "status": "passed",
+        "message": "Each beat has start, impact, and end pose prompts."
+      },
+      {
+        "id": "weapon-lock",
+        "status": "passed",
+        "message": "The Listening Bois is named in every storyboard prompt."
+      }
+    ]
+  },
+  "files": {
+    "packetPath": "C:\\Users\\RAY\\OneDrive\\Documents\\Opaija\\ops\\production\\power-teasers\\kairo\\kairo-power-teaser-2026-06-07t12-13-34-553z\\power-teaser-package.json",
+    "beatSheetPath": "C:\\Users\\RAY\\OneDrive\\Documents\\Opaija\\ops\\production\\power-teasers\\kairo\\kairo-power-teaser-2026-06-07t12-13-34-553z\\audio-action-beat-sheet.json",
+    "seedanceHandoffPath": "C:\\Users\\RAY\\OneDrive\\Documents\\Opaija\\ops\\production\\power-teasers\\kairo\\kairo-power-teaser-2026-06-07t12-13-34-553z\\seedance-handoff.json"
+  }
+}

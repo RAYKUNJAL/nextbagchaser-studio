@@ -1,0 +1,118 @@
+{
+  "episode": "01 - The First Pulse",
+  "status": "next_rebuild_required_before_animation",
+  "purpose": "Storyboard-first production board for the next approved Episode 1 rebuild. The current generated media is a rejected scratch pass.",
+  "animationRule": "Every combat, transformation, reveal, or power beat must include a start pose and an action or impact pose before Seedance animation. Static poster frames are blocked.",
+  "panels": [
+    {
+      "panelId": "1A",
+      "title": "Trinidad Wakes",
+      "camera": "Crane-down into eye-level street tracking",
+      "actionStart": "Kai moves through a waking Trinidad street toward the doubles cart.",
+      "actionImpact": "Traffic rhythm and street sound subtly pull toward Kai without him noticing.",
+      "actionEnd": "Kai reaches the cart, still unaware the rhythm has selected him.",
+      "emotion": "Hungry, distracted, alive",
+      "fx": "Warm dawn dust, tiny gold pulse under street noise",
+      "qcGate": "Kai must match approved sheet; no signs, shop text, labels, or generated lettering."
+    },
+    {
+      "panelId": "1B",
+      "title": "Doubles Before Destiny",
+      "camera": "Comedic push-in from food to Kai's foot",
+      "actionStart": "Kai reaches for doubles.",
+      "actionImpact": "A gold pulse snaps under his sneaker and interrupts the joke.",
+      "actionEnd": "Kai freezes, focus replacing hunger.",
+      "emotion": "Joy turns to alarm",
+      "fx": "Small orange ring under foot, dust lift",
+      "qcGate": "No readable cart signage or wrapper text."
+    },
+    {
+      "panelId": "2A",
+      "title": "Mother Lall's Warning",
+      "camera": "Tight insert, rack focus from spoon to eyes",
+      "actionStart": "Mother Lall folds a coded sigil into a wrapper.",
+      "actionImpact": "Spoon taps with impossible timing.",
+      "actionEnd": "Her eyes warn Kai before the adults explain anything.",
+      "emotion": "Calm, dangerous wisdom",
+      "fx": "Cream/gold sigil flash",
+      "qcGate": "Sigil must be abstract glow, not readable letters."
+    },
+    {
+      "panelId": "4A",
+      "title": "The Listening Bois",
+      "camera": "Low-angle push toward hand and staff",
+      "actionStart": "Kai reaches into hidden storage.",
+      "actionImpact": "The Listening Bois wakes and pulls rhythm into his palm.",
+      "actionEnd": "Kai recoils as the gayelle threshold forms.",
+      "emotion": "Fear and recognition",
+      "fx": "Wood-vein glow, dust lift, orange pulse",
+      "qcGate": "Staff geometry, beads, wraps, scale, and Kai hand structure must stay correct."
+    },
+    {
+      "panelId": "4B",
+      "title": "First Pulse Knockback",
+      "camera": "Side track with low impact angle",
+      "actionStart": "Kai loses balance as the staff rolls toward him.",
+      "actionImpact": "Ground ring launches him backward.",
+      "actionEnd": "His hand catches the staff by instinct.",
+      "emotion": "Shocked survival",
+      "fx": "Gold/orange ring, dust burst, no face-covering effects",
+      "qcGate": "Readable body mechanics; no stiff poster pose."
+    },
+    {
+      "panelId": "5B",
+      "title": "Nia Breaks Fear",
+      "camera": "Medium push-in to full-body vocal release",
+      "actionStart": "Nia inhales while fear static closes in.",
+      "actionImpact": "She shouts a lavway command that breaks the wave.",
+      "actionEnd": "Gold sound ribbons clear space around the heroes.",
+      "emotion": "Terror becomes courage",
+      "fx": "Gold ribbons, cracked black static, visible mouth and eyes",
+      "qcGate": "No text-shaped sound waves or lyric-like marks."
+    },
+    {
+      "panelId": "5C",
+      "title": "Mother Lall Blocks Silence",
+      "camera": "Fast insert into locked medium hero pose",
+      "actionStart": "Black silence slash enters from offscreen.",
+      "actionImpact": "Mother Lall intercepts it with a serving spoon.",
+      "actionEnd": "She holds the block with a calm glare.",
+      "emotion": "Legendary restraint",
+      "fx": "Cream/gold impact spark",
+      "qcGate": "No slash covering her face or spoon contact point."
+    },
+    {
+      "panelId": "7B",
+      "title": "Kai vs Malik Exchange",
+      "camera": "Side-tracking martial exchange",
+      "actionStart": "Malik steps in with precise red/black Rhythm Break strike.",
+      "actionImpact": "Kai blocks with accidental gold Tempo Pulse and stumbles into a low sweep.",
+      "actionEnd": "Both fighters separate with Papa's cane about to interrupt.",
+      "emotion": "Rival pressure, Kai improvising",
+      "fx": "Red/black line, gold block pulse, clean weapon contact",
+      "qcGate": "One readable strike/block/sweep only; no spinning clutter."
+    },
+    {
+      "panelId": "10B",
+      "title": "Stillwater Command",
+      "camera": "Locked dread shot, slow push",
+      "actionStart": "Marius raises the silence staff.",
+      "actionImpact": "Black pulse absorbs surrounding rhythm.",
+      "actionEnd": "Stillwater silhouettes kneel without readable symbols.",
+      "emotion": "Cold command",
+      "fx": "Black ring, muted gold swallowed",
+      "qcGate": "Villain must match Marius sheet; no readable cult text or generic armor."
+    },
+    {
+      "panelId": "10C",
+      "title": "Final Cliffhanger",
+      "camera": "Match-cut split frame into locked stare",
+      "actionStart": "Marius' stillness collapses sound.",
+      "actionImpact": "Kai hears the impossible silent drumbeat.",
+      "actionEnd": "Gold/sea-blue pulse answers black ring on unresolved stare.",
+      "emotion": "Dread and awakening",
+      "fx": "Black ring, gold/sea-blue answer",
+      "qcGate": "No title/logo/text in image; CTA added later in editor only."
+    }
+  ]
+}

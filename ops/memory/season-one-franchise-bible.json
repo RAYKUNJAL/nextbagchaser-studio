@@ -1,0 +1,110 @@
+{
+  "project": "OPAIJA: Staff of Battle",
+  "seasonTitle": "OPAIJA: Blood of the Gayelle",
+  "lastUpdated": "2026-06-05",
+  "franchisePromise": "Every Island Has a Warrior. Every Rhythm Has a Weapon.",
+  "audienceMandate": [
+    "Build for the full Caribbean region and diaspora as a 44-million-strong cultural audience.",
+    "Build for under-served Black anime fans worldwide.",
+    "Keep the story fast, cliffhanger-driven, emotional, culturally specific, and commercially accessible.",
+    "Trinidad is the spark; the full Caribbean is the franchise map."
+  ],
+  "emotionalSpine": "Caribbean and Black youth discover that their culture was never background. It was the weapon, the shield, the map, and the memory.",
+  "centralMystery": "Why did the Opaija Seeds awaken now?",
+  "secondaryMystery": "Who betrayed the original Guardians, and what happens if the False One Drum is completed?",
+  "powerSystem": [
+    "A stick has memory.",
+    "A fighter has spirit.",
+    "A drum has rhythm.",
+    "A lavway has command.",
+    "The gayelle binds them together."
+  ],
+  "cliffhangerRules": [
+    "Every episode must end with a sharp unanswered question or reversal.",
+    "Possible endings include a new island answering, a trusted elder lying, Kai hurting someone with uncontrolled power, Selah secretly saving Kai, Marius stealing a beloved memory, Jabs leaking Opaija footage, a celebration going silent, or a young warrior turning against their island rhythm.",
+    "Cliffhangers should expand the map, deepen the mystery, or emotionally punish a character choice."
+  ],
+  "heroArc": {
+    "character": "Kairo \"Kai\" Baptiste",
+    "gift": "Tempo Pulse + Echo Pulse through The Listening Bois.",
+    "flaw": "Kai hears the rhythm before he understands responsibility. He acts before listening and wants to protect everyone before he understands the cost.",
+    "humanHook": "Kai loves doubles and may need one before a fight because food steadies him.",
+    "seasonArc": "Kai moves from reactive chosen kid to disciplined protector who understands that the stick is not a gift. It is a debt."
+  },
+  "villainCanon": {
+    "name": "Marius Vale",
+    "title": "False One Drum",
+    "origin": "Born in Trinidad, raised between London and Miami, trained by a broken Guardian faction that believed island rhythms caused division, betrayal, and bloodshed.",
+    "power": "Silence Pulse + Memory Theft",
+    "weapon": "Black bois / silence staff",
+    "belief": "Too many islands. Too many flags. Too many songs. Too much pain. One Drum ends the noise.",
+    "ideology": "Forced unity. Marius says he is saving the Caribbean from itself, but his method erases memory, voice, family stories, and island identity.",
+    "seasonOneReveal": "At first, people think Marius is hunting Kai's stick. The truth: he is collecting every island's rhythm, and Kai is only the first key.",
+    "unforgivableActs": [
+      "Steal the memory of someone beloved.",
+      "Silence an entire community celebration.",
+      "Turn one young warrior against their own island rhythm."
+    ]
+  },
+  "villainCrew": {
+    "name": "The Stillwater Order",
+    "symbol": "A black drum circle with no center pulse.",
+    "motto": "Noise is weakness. Memory is weight. One Drum. One command.",
+    "description": "A quiet, disciplined, stylish, frightening organization that removes rhythm from places before they attack.",
+    "members": [
+      {
+        "name": "Marius Vale",
+        "role": "Leader, False One Drum, Silence Pulse and Memory Theft."
+      },
+      {
+        "name": "Selah Vale",
+        "role": "Heir, precision fighter, Silence Pulse user, possible future ally."
+      },
+      {
+        "name": "The Mute Boismen",
+        "role": "Elite stick fighters who surrendered personal rhythms to fight as one machine."
+      },
+      {
+        "name": "The Echo Thieves",
+        "role": "Spies who steal songs, family sayings, stories, and lavway phrases."
+      },
+      {
+        "name": "The Drumless",
+        "role": "Recruits who lost island connection and follow Marius for identity, rank, and purpose."
+      },
+      {
+        "name": "The Black Bell Sisters",
+        "role": "Three enforcers with silent bells that cancel voice-based powers like Nia's lavway."
+      },
+      {
+        "name": "The Archivist of Silence",
+        "role": "Older villain who rewrites records, burns maps, and erases Guardian history; direct enemy to Asha."
+      }
+    ]
+  },
+  "islandExpansion": [
+    "Trinidad: first pulse, gayelle, Kalenda/Calinda, doubles, Carnival resistance, Guardian secrets.",
+    "Tobago: tide signal, coastal watch, Tariq's Tidewatch line.",
+    "Jamaica: bass rhythm and warrior sound system mythology.",
+    "Haiti: ancestral gate and deep spiritual memory.",
+    "Barbados: iron memory and old colonial fortress echoes.",
+    "Grenada: spice/fire pulse.",
+    "St. Lucia: mountain and guardian spirit.",
+    "Guyana: river/jungle rhythm.",
+    "Diaspora: lost seeds in New York, Toronto, London, Miami."
+  ],
+  "episodeOne": {
+    "title": "The First Pulse",
+    "format": "Narrator-led 6-9 minute pilot, adaptable into 32-page comic and 45-75 second shorts.",
+    "function": [
+      "Introduce Kai and Trinidad.",
+      "Establish doubles, street life, rhythm, humor, and cultural texture.",
+      "Awaken The Listening Bois.",
+      "Introduce the core team signals.",
+      "Reveal Marius through silence.",
+      "Tease Selah and Tobago.",
+      "End with a silent drumbeat from another island."
+    ],
+    "cliffhanger": "Kai promises to protect the rhythm without knowing the cost. Then a silent drumbeat answers from another island, and Marius says: The first key woke. Find the rest."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "name": "OPAIJA Season 1 Production Agent Roster",
+  "updatedAt": "2026-06-05",
+  "sharedMemory": [
+    "ops/memory/shared-memory.json",
+    "ops/memory/season-one-franchise-bible.json",
+    "ops/memory/opaija-style-god-memory.json",
+    "ops/memory/story-format-writer-memory.json"
+  ],
+  "activeBuild": "ops/production/season-one/episode-01-the-first-pulse",
+  "agents": [
+    {
+      "id": "showrunner",
+      "name": "Goose Showrunner",
+      "modelDefault": "qwen-local",
+      "escalation": "openrouter",
+      "mission": "Protect the full Season 1 story engine, pacing, cliffhangers, theme, and franchise scale.",
+      "inputs": ["season-one-franchise-bible", "pilot beat map", "character roster"],
+      "outputs": ["season arc", "episode beat lock", "agent assignments"]
+    },
+    {
+      "id": "lore-guardian",
+      "name": "Lore Guardian",
+      "modelDefault": "qwen-local",
+      "escalation": "openrouter",
+      "mission": "Block canon drift and preserve cultural specificity, historical language, power rules, island logic, and character identity.",
+      "inputs": ["shared memory", "style god memory", "episode packets"],
+      "outputs": ["canon QC", "continuity warnings", "approved memory updates"]
+    },
+    {
+      "id": "villain-room",
+      "name": "Stillwater Villain Room",
+      "modelDefault": "qwen-local",
+      "escalation": "openrouter",
+      "mission": "Build Marius Vale, Selah Vale, and the Stillwater Order into a franchise-level antagonist force.",
+      "inputs": ["villain canon", "episode beats"],
+      "outputs": ["villain scene pressure", "crew actions", "cliffhanger escalation"]
+    },
+    {
+      "id": "story-format-writer",
+      "name": "Story Format Writer",
+      "modelDefault": "qwen-local",
+      "escalation": "openrouter",
+      "mission": "Adapt the same canon into episode script, vertical shorts, comic pages, manga beats, and storybook prose.",
+      "inputs": ["story-format-writer-memory", "episode beat lock"],
+      "outputs": ["narrator script", "dialogue beats", "page plan", "short-form cuts"]
+    },
+    {
+      "id": "storyboard-director",
+      "name": "Storyboard Director",
+      "modelDefault": "qwen-local",
+      "escalation": "openrouter",
+      "mission": "Turn Episode 1 into visual panels with shot purpose, camera, staging, emotion, action, FX, and timing.",
+      "inputs": ["episode script", "character sheets"],
+      "outputs": ["storyboard panels", "shot list", "camera plan"]
+    },
+    {
+      "id": "action-director",
+      "name": "Action Director",
+      "modelDefault": "qwen-local",
+      "escalation": "openrouter",
+      "mission": "Design readable Kalenda/bois/anime action with anticipation, impact, recovery, and no copied choreography.",
+      "inputs": ["action memory", "episode storyboard"],
+      "outputs": ["fight beats", "pose keys", "camera movement", "FX limits"]
+    },
+    {
+      "id": "character-continuity",
+      "name": "Character Continuity QC",
+      "modelDefault": "qwen-local",
+      "escalation": "openrouter",
+      "mission": "Preserve faces, skin tone, hair, wardrobe, props, weapons, body scale, and power rules across all prompts.",
+      "inputs": ["approved character roster", "style god memory", "storyboard panels"],
+      "outputs": ["continuity locks", "negative prompts", "reject notes"]
+    },
+    {
+      "id": "seedance-prompt-engineer",
+      "name": "Seedance Prompt Engineer",
+      "modelDefault": "qwen-local",
+      "escalation": "openrouter",
+      "mission": "Convert storyboard frames into ordered Seedance reference-to-video instructions with @Image references, motion arcs, timing, and identity locks.",
+      "inputs": ["storyboard frames", "camera plan", "continuity locks"],
+      "outputs": ["seedance-handoff.json", "seedance-master-prompt.md"]
+    },
+    {
+      "id": "voice-editor",
+      "name": "Voice and Edit Director",
+      "modelDefault": "qwen-local",
+      "escalation": "openrouter",
+      "mission": "Prepare narrator-led voice script, caption timing, Remotion assembly notes, thumbnail, and CTA.",
+      "inputs": ["episode script", "shot list"],
+      "outputs": ["voiceover script", "captions", "edit manifest", "CTA"]
+    },
+    {
+      "id": "launch-copy",
+      "name": "Launch Copy Agent",
+      "modelDefault": "qwen-local",
+      "escalation": "openrouter",
+      "mission": "Create cliffhanger hooks, social captions, blog posts, email subject lines, and founder list CTAs.",
+      "inputs": ["episode packet", "franchise bible"],
+      "outputs": ["social copy", "blog brief", "email copy", "short hooks"]
+    }
+  ],
+  "parallelBuildOrder": [
+    "showrunner + lore-guardian + villain-room",
+    "story-format-writer + storyboard-director",
+    "action-director + character-continuity",
+    "seedance-prompt-engineer + voice-editor",
+    "launch-copy + lore-guardian final QC"
+  ]
+}

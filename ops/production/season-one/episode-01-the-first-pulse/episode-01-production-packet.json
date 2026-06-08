@@ -1,0 +1,296 @@
+{
+  "project": "OPAIJA: Staff of Battle",
+  "seasonTitle": "OPAIJA: Blood of the Gayelle",
+  "episodeNumber": 1,
+  "episodeTitle": "The First Pulse",
+  "updatedAt": "2026-06-05",
+  "status": "production-ready-storyboard-packet",
+  "targetRuntime": "6-9 minutes narrator-led pilot; cutdowns available for 45-75 second vertical social episodes",
+  "franchiseMandate": "Fast-paced Caribbean anime with cliffhangers, built for the full Caribbean and global Black anime audience.",
+  "activeMemory": [
+    "ops/memory/shared-memory.json",
+    "ops/memory/season-one-franchise-bible.json",
+    "ops/memory/opaija-style-god-memory.json",
+    "ops/agents/season-one-agent-roster.json"
+  ],
+  "logline": "Kai hears a rhythm under Trinidad street life, touches The Listening Bois, and awakens the first Opaija Seed as Marius Vale begins hunting every island's hidden rhythm.",
+  "theme": "Culture was never background. It was the weapon, the shield, the map, and the memory.",
+  "episodePromise": "A local Trinidad day turns into a spiritual martial-arts awakening, then opens the map to the wider Caribbean.",
+  "cliffhanger": "A silent drumbeat answers from another island. Marius says: \"The first key woke. Find the rest.\"",
+  "primaryCharacters": [
+    {
+      "id": "kairo",
+      "name": "Kairo \"Kai\" Baptiste",
+      "roleInEpisode": "Hero; hears the first pulse and awakens The Listening Bois.",
+      "continuityLock": "Use approved Kai model sheet. Medium locs, rounded chin, full lips, broad Caribbean/African nose, lean athletic build, modern Trinidad streetwear, seed pendant, The Listening Bois always readable.",
+      "actionLanguage": "Impulsive rhythm steps, instinctive staff guards, strong heart but incomplete control.",
+      "emotionalArc": "From hungry, distracted kid chasing doubles to frightened protector making a promise he does not yet understand."
+    },
+    {
+      "id": "mother-lall",
+      "name": "Mother Lall",
+      "roleInEpisode": "Doubles vendor and hidden Guardian messenger.",
+      "continuityLock": "Use approved Mother Lall sheet. Vendor energy, tray/spoon props, practical clothing, wise eyes, coded paper sigils.",
+      "actionLanguage": "Small efficient Guardian timing; one serving-spoon block should feel shocking and funny.",
+      "emotionalArc": "She hides truth to protect Kai but knows the first pulse cannot be stopped."
+    },
+    {
+      "id": "nia",
+      "name": "Nia Toussaint",
+      "roleInEpisode": "Lavway voice specialist; first visible voice-command wave.",
+      "continuityLock": "Use approved Nia sheet. Lavway scarf, rhythm bell, expressive eyes, gold sound ribbons.",
+      "actionLanguage": "Breath, stance, voice ripple, sound ribbon command.",
+      "emotionalArc": "Afraid to be heard, but chooses to shout when fear freezes the street."
+    },
+    {
+      "id": "asha",
+      "name": "Asha Singh-Baptiste",
+      "roleInEpisode": "Historian/medic; identifies memory marks and next clue.",
+      "continuityLock": "Use approved Asha sheet. Archive props, bandage cords, matador baton, teal/gold notes.",
+      "actionLanguage": "Careful observation, quick bandage-cord movement, precise archive clue handling.",
+      "emotionalArc": "Moves from researching old marks to realizing the marks are still alive."
+    },
+    {
+      "id": "jabari",
+      "name": "Jabari \"Jabs\" Henry",
+      "roleInEpisode": "Drummer/comic relief/content creator; leaks blurred public proof.",
+      "continuityLock": "Use approved Jabs sheet. Kalinda drum, L-stick beat sticks, creator gear, orange accents.",
+      "actionLanguage": "Fast hand rhythm, camera-phone comedy, panic timing that turns useful.",
+      "emotionalArc": "Turns from joking observer into the counter-beat that keeps everyone moving."
+    },
+    {
+      "id": "malik",
+      "name": "Malik St. Hill",
+      "roleInEpisode": "Disciplined rival; challenges Kai instead of helping.",
+      "continuityLock": "Use approved Malik sheet. Rootbreaker drum, sticks, wrist wraps, disciplined red/black design.",
+      "actionLanguage": "Clean guards, precise strikes, rhythm-breaking footwork, controlled aggression.",
+      "emotionalArc": "Believes Kai is not worthy of the first pulse."
+    },
+    {
+      "id": "papa-etienne",
+      "name": "Papa Etienne Roach",
+      "roleInEpisode": "Elder batonier and former Guardian; stops the first Kai/Malik clash.",
+      "continuityLock": "Use approved Papa Etienne sheet. Sacred bois hidden cane, elder posture, hidden speed.",
+      "actionLanguage": "Minimal movement, cane tap, ground command, old power under restraint.",
+      "emotionalArc": "His silence has protected people, but now silence becomes dangerous."
+    },
+    {
+      "id": "marius",
+      "name": "Marius Vale",
+      "roleInEpisode": "Main villain; appears through silence and confirms Kai is the first key.",
+      "continuityLock": "Use approved Marius sheet. Black bois/silence staff, controlled intimidating posture, no generic armor.",
+      "actionLanguage": "Stillness, sound removal, memory theft pressure, black pulse restraint.",
+      "emotionalArc": "Calm certainty. He believes forced unity is mercy."
+    },
+    {
+      "id": "selah",
+      "name": "Selah Vale",
+      "roleInEpisode": "Villain heir; rooftop observer uncertain about Kai.",
+      "continuityLock": "Use approved Selah sheet. Silence baton, precision posture, controlled face, purple/black accents.",
+      "actionLanguage": "Rooftop stillness, fast eye movement, poised baton grip.",
+      "emotionalArc": "Sees Kai as either threat, proof, or future problem."
+    },
+    {
+      "id": "tariq",
+      "name": "Tariq Davidson",
+      "roleInEpisode": "Tobago signal; senses the disturbance from the coast.",
+      "continuityLock": "Use approved Tariq sheet. Tidewatch staff, shell pendant, sea cloth sash, Tobago coastal energy.",
+      "actionLanguage": "Coastal watch stance, tide-sense hand movement, wind and sea response.",
+      "emotionalArc": "The island map expands through him."
+    }
+  ],
+  "sceneBeats": [
+    {
+      "scene": 1,
+      "title": "Dawn Street Rhythm",
+      "timecode": "00:00-00:45",
+      "location": "Trinidad street with doubles cart, school uniforms, music, old men watching.",
+      "story": "The street wakes with life. Kai is late, hungry, and locked onto a doubles cart. Under the ordinary street rhythm, he hears a second rhythm no one else hears.",
+      "camera": "Wide establishing crane down into handheld street-level tracking; 35mm lens feel; warm early light.",
+      "action": "Kai weaves through people, almost misses a crossing, stops for doubles, then freezes when the hidden rhythm hits.",
+      "emotion": "Playful into unsettled curiosity.",
+      "fx": "Barely visible gold/orange pulse under street sounds; no obvious magic yet.",
+      "narration": "In Trinidad, rhythm does not wait for permission. It hides in traffic, steelpan, school shoes, old jokes, and the smell of doubles before sunrise.",
+      "cliffBeat": "Kai turns toward a sound nobody else heard."
+    },
+    {
+      "scene": 2,
+      "title": "The Wrapper Message",
+      "timecode": "00:45-01:25",
+      "location": "Mother Lall's doubles cart.",
+      "story": "Mother Lall folds a coded paper sigil into Kai's doubles wrapper and warns him to eat before panic starts.",
+      "camera": "Medium two-shot, insert close-up on wrapper fold, rack focus from pepper sauce to sigil mark.",
+      "action": "Mother Lall's serving spoon taps a rhythm. Kai laughs it off until the wrapper mark briefly glows.",
+      "emotion": "Comic warmth with hidden danger.",
+      "fx": "Tiny cream/gold sigil pulse in the paper fold.",
+      "dialogue": [
+        "Mother Lall: Eat first. Panic after.",
+        "Kai: Aunty, why you always talk like something chasing me?",
+        "Mother Lall: Because sometimes, child, it already reach."
+      ],
+      "cliffBeat": "The sigil points toward an old wall mark."
+    },
+    {
+      "scene": 3,
+      "title": "Marks That Remember",
+      "timecode": "01:25-02:05",
+      "location": "Old wall, side street, faded paint and hidden Guardian marks.",
+      "story": "Asha studies the old marks. She sees memory echo through paint and realizes the symbol on Kai's wrapper is not decorative.",
+      "camera": "Macro close-up on cracked paint; slow push into Asha's eye reflection; cut to memory flash frames.",
+      "action": "Asha traces the wall but does not touch the glowing center. Bandage cords twitch like they recognize the mark.",
+      "emotion": "Focused, uneasy.",
+      "fx": "Teal/gold memory shimmer, brief ancestral silhouettes, no literal exposition text.",
+      "dialogue": [
+        "Asha: This mark was painted over.",
+        "Kai: So?",
+        "Asha: Paint covers walls. Not memory."
+      ],
+      "cliffBeat": "The wall answers with a pulse under Kai's feet."
+    },
+    {
+      "scene": 4,
+      "title": "The First Touch",
+      "timecode": "02:05-03:00",
+      "location": "Hidden storage space behind the wall, half-real gayelle threshold.",
+      "story": "Kai finds The Listening Bois. When he touches it, the street begins transforming into a gayelle-like spirit space.",
+      "camera": "Low-angle push-in on Kai's hand; close-up on wood grain; 180-degree orbit as the environment changes.",
+      "action": "Kai reaches, hesitates, touches the staff, then gets knocked back by a ground pulse. The staff rolls toward him like it chose him.",
+      "emotion": "Wonder into fear.",
+      "fx": "Gold/orange rhythm rings, dust lift, wood memory veins, environment split between real Trinidad and old memory.",
+      "narration": "A stick has memory. A fighter has spirit. But memory does not wake for everyone.",
+      "cliffBeat": "The first Opaija Seed opens under Kai."
+    },
+    {
+      "scene": 5,
+      "title": "The Street Becomes Gayelle",
+      "timecode": "03:00-03:50",
+      "location": "Spirit-space gayelle layered over the street.",
+      "story": "The street becomes a circle. Jabs' timing breaks, Nia's voice bends the air, and Mother Lall quietly shifts from vendor to Guardian messenger.",
+      "camera": "360-degree circle move, cuts to Jabs phone POV, low-angle on Nia, insert on Mother Lall's spoon grip.",
+      "action": "Jabs records a joke, drops timing, then finds a counter-beat. Nia shouts a lavway phrase and a fear wave breaks. Mother Lall blocks a silent strike with her spoon.",
+      "emotion": "Chaos into first teamwork spark.",
+      "fx": "Gold sound ribbons, orange drum sync pulses, cream paper sigils, black silence slash blocked by spoon impact.",
+      "dialogue": [
+        "Jabs: Tell me allyuh seeing this too, right?",
+        "Nia: Kai, move!",
+        "Mother Lall: I told you eat first."
+      ],
+      "cliffBeat": "A black silence wave cuts all sound."
+    },
+    {
+      "scene": 6,
+      "title": "Marius In The Silence",
+      "timecode": "03:50-04:45",
+      "location": "Same gayelle, now muted by black pulse.",
+      "story": "Marius appears without fully revealing his hand. Ambient sound drops away. Selah watches from a rooftop, studying Kai.",
+      "camera": "Locked wide with sound drop; slow dolly toward Marius silhouette; cutaway to Selah high-angle rooftop.",
+      "action": "Marius lifts the black bois. Sound vanishes. Kai tries to speak but only heartbeat remains. Selah's baton tilts, ready but withheld.",
+      "emotion": "Dread, awe, confusion.",
+      "fx": "Black ring absorbs gold pulses; no face-covering effects; silence visualized as pressure distortion.",
+      "dialogue": [
+        "Marius: So the first key woke.",
+        "Selah: He looks untrained.",
+        "Marius: Good. Fear teaches quickly."
+      ],
+      "cliffBeat": "Marius marks Kai as the first key, not the prize."
+    },
+    {
+      "scene": 7,
+      "title": "Rootbreaker Challenge",
+      "timecode": "04:45-05:45",
+      "location": "Gayelle edge, training yard bleed-through.",
+      "story": "Malik enters with Rootbreaker force and challenges Kai instead of helping him. Their clash is short, readable, and interrupted by Papa Etienne.",
+      "camera": "Side-on action staging, low-angle guard closeups, lateral tracking during exchange, hard cut on cane strike.",
+      "action": "Malik strikes first with controlled rhythm-break. Kai blocks instinctively but overcommits. Malik sweeps. Kai recovers with accidental Tempo Pulse. Papa Etienne stops both with one cane strike to the ground.",
+      "emotion": "Rival pressure and embarrassment.",
+      "fx": "Red-black rhythm break sparks against gold/orange Kai pulse; effects never hide staff contact points.",
+      "dialogue": [
+        "Malik: The stick chose you? That does not mean you earned it.",
+        "Kai: I did not ask for this!",
+        "Papa Etienne: Then learn before it asks more."
+      ],
+      "cliffBeat": "The Guardian mark opens beneath Papa Etienne's cane."
+    },
+    {
+      "scene": 8,
+      "title": "Not A Gift, A Debt",
+      "timecode": "05:45-06:45",
+      "location": "Old Guardian mark / memory circle.",
+      "story": "Papa Etienne reveals the first rule. The seed is not a gift. It is a debt. Asha identifies the route to a forgotten gayelle site.",
+      "camera": "Overhead symbol shot, slow push into Papa's face, insert on Asha's notebook and map.",
+      "action": "The mark opens in layers. Asha uses bandage cord to stabilize a broken symbol. Kai grips the staff like it may burn him.",
+      "emotion": "Weight, responsibility, fear.",
+      "fx": "Root pulse, map line glows toward forgotten gayelle site, memory silhouettes behind Papa.",
+      "dialogue": [
+        "Papa Etienne: The stick is not a gift.",
+        "Kai: Then what is it?",
+        "Papa Etienne: A debt."
+      ],
+      "cliffBeat": "The map line points past the neighborhood, toward an old forgotten circle."
+    },
+    {
+      "scene": 9,
+      "title": "The Rumor Goes Public",
+      "timecode": "06:45-07:30",
+      "location": "Street returns halfway to normal.",
+      "story": "Jabs posts a blurred clip before anyone can stop him, starting the public rumor of Opaija.",
+      "camera": "Phone-screen insert, fast push into upload button, social comments flicker as abstract shapes without readable generated text.",
+      "action": "Jabs tries to delete the clip, but it already spreads. Nia panics. Mother Lall realizes hiding is over.",
+      "emotion": "Comic mistake into real consequence.",
+      "fx": "Phone glow, rhythm static, no AI-generated readable social text.",
+      "dialogue": [
+        "Jabs: I was saving it in drafts!",
+        "Asha: You posted it.",
+        "Jabs: Drafts... public drafts?"
+      ],
+      "cliffBeat": "Marius' Echo Thieves detect the leaked pulse."
+    },
+    {
+      "scene": 10,
+      "title": "Another Island Answers",
+      "timecode": "07:30-08:30",
+      "location": "Tobago coast and Marius' Stillwater chamber intercut.",
+      "story": "Tariq senses the disturbance from Tobago. Marius gives the Stillwater Order their first command.",
+      "camera": "Wide coastal moonlight, close-up shell pendant glow, match cut to black drum circle chamber.",
+      "action": "Tariq plants the Tidewatch staff into sand as tide marks glow. Marius stands before the Stillwater Order. Selah lowers her eyes but listens.",
+      "emotion": "Wonder and threat.",
+      "fx": "Sea-blue tide pulse answers Kai's gold rhythm; black drum circle absorbs ambient sound.",
+      "dialogue": [
+        "Tariq: That was not thunder.",
+        "Marius: The first key woke. Find the rest."
+      ],
+      "cliffBeat": "A silent drumbeat answers from another island."
+    }
+  ],
+  "verticalCutdowns": [
+    {
+      "title": "Kai Hears The First Pulse",
+      "runtime": "45-60 seconds",
+      "sourceScenes": [1, 2, 4],
+      "hook": "Kai only wanted doubles. The rhythm wanted him.",
+      "cta": "Follow Opaija. Every island has a warrior."
+    },
+    {
+      "title": "Marius Enters In Silence",
+      "runtime": "45-60 seconds",
+      "sourceScenes": [5, 6, 10],
+      "hook": "The villain does not raise his voice. He removes yours.",
+      "cta": "The False One Drum is coming."
+    },
+    {
+      "title": "Not A Gift, A Debt",
+      "runtime": "45-75 seconds",
+      "sourceScenes": [7, 8],
+      "hook": "The stick chose Kai. That does not mean he earned it.",
+      "cta": "Enter the gayelle."
+    }
+  ],
+  "qcRules": [
+    "No character design drift from approved model sheets.",
+    "No extra fingers, broken staff geometry, random crowds, unreadable weapon contact, or effects hiding faces.",
+    "No generated text inside image frames.",
+    "Never turn the storyboard into a character bible sheet or grid.",
+    "Every action shot must show anticipation, strike/contact, and recovery or reaction.",
+    "Use respectful historical language and concrete Caribbean specificity."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "episode": "01 - The First Pulse",
+  "status": "rejected_scratch_pass",
+  "rejectedAt": "2026-06-05T07:00:00.000Z",
+  "reason": "The first live assembly proved the technical pipeline, but the artwork drifted from the approved OPAIJA character bible/model sheets, some clips contained generated text or lettering artifacts, action motion was too weak, and the narration sounded robotic.",
+  "doNotPublish": true,
+  "blockers": [
+    "Storyboard art must match the approved character sheets, especially Kai's black sleeveless hoodie, red/orange sash, detailed Listening Bois, beads/wraps, pendant, skin tone, silhouette, and ink-heavy OPAIJA model-sheet style.",
+    "Artwork and clips with lettering, signs, fake logos, subtitles, labels, or poster text must be rejected before animation.",
+    "Action scenes must be generated from start/end action frames or multi-reference boards, not a single static poster frame.",
+    "Voiceover must be a directed performance pass with emotion, pauses, and Caribbean cadence notes, not a generic scratch narration."
+  ],
+  "nextBuildRules": [
+    "Use approved model-sheet image files as real visual references, not only text names in the prompt.",
+    "Create action-pair frames for every combat, transformation, reveal, and power beat: first pose, impact pose, recovery pose where needed.",
+    "Run visual QC on every artwork frame before Seedance: style match, character match, no lettering, readable action, readable weapon, no costume drift.",
+    "Only send QC-approved storyboard frames to Seedance.",
+    "Use a human-directed voice map or a stronger ElevenLabs performance prompt before final assembly."
+  ],
+  "currentArtifacts": {
+    "finalVideo": "/generated/videos/episode-01-the-first-pulse-qc-failed.mp4",
+    "purpose": "Internal preview only. Use for diagnosing pipeline failures, not marketing or release."
+  }
+}

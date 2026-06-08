@@ -1,0 +1,121 @@
+{
+  "episode": "01 - The First Pulse",
+  "status": "locked_for_next_rebuild",
+  "styleSource": "Current approved ChatGPT OPAIJA character/model sheets and premium action sheets",
+  "globalStyleLock": "Premium cinematic 2D Trini anime action-trailer style built from the approved ChatGPT OPAIJA character bible sheets. The uploaded ChatGPT sheets are the canon visual source, not generic anime. Preserve exact character identities, faces, hair, skin tone, wardrobe, props, and silhouettes from the bible sheets. Use clean black anime/comic linework, flat cel-shaded animated-series color with dramatic shadow depth, warm brown skin language, rounded chins, full lips, broad African/Caribbean nose structure, Trinidad/Tobago street energy, Kalenda/Calinda and Carnival-inspired details, dark charcoal/brown environments, controlled gold/orange Opaija energy, warm rim light, glowing staff effects, flying debris, cracked ground, kinetic low-angle martial posing, and expensive franchise-ready contrast. Show weapons tip-to-tip with safe margins; never crop Kai's staff or bois unless the shot is an intentional close-up. No generated text unless added later in the editor layer.",
+  "forbidden": [
+    "no visible lettering, labels, subtitles, logo marks, fake signs, phone text, poster text, or generated UI text inside artwork",
+    "no character-sheet grids or multi-pose reference sheets as final storyboard frames",
+    "no costume drift, skin tone drift, weapon drift, hairstyle drift, face drift, or generic fantasy armor",
+    "no pseudo-3D, plastic, painterly, photoreal, glossy, or generic AI fantasy art",
+    "no effects covering eyes, hands, staff contact points, weapon contact, or readable silhouettes",
+    "no weak action poses for combat, transformation, reveal, or power beats",
+    "no cropped staff, cropped bois, cropped weapon tip, cropped hands, cropped feet, or cut-off hero silhouette in full-body or action panels"
+  ],
+  "styleReferencePaths": [
+    "/assets/style-references/opaija-character-bible-heroes.png",
+    "/assets/style-references/opaija-character-bible-villains-guardians.png",
+    "/assets/style-references/opaija-premium-action-title-01.png",
+    "/assets/style-references/opaija-premium-action-title-02.png"
+  ],
+  "qualityReference": {
+    "sourceVideo": "C:\\Users\\RAY\\Downloads\\raytattoos_httpss.mj.run742034KrasU_Image1_Image2_Image3_Ultr_d730e109-270d-4cca-9f30-ca2cec63b3be_0.mp4",
+    "chatGptBibleSheets": [
+      "/assets/style-references/opaija-character-bible-heroes.png",
+      "/assets/style-references/opaija-character-bible-villains-guardians.png"
+    ],
+    "premiumActionFrames": [
+      "/assets/style-references/opaija-premium-action-title-01.png",
+      "/assets/style-references/opaija-premium-action-title-02.png"
+    ],
+    "extractedFrames": [
+      "out/reference-style/midjourney-quality/reference-1.png",
+      "out/reference-style/midjourney-quality/reference-2.png",
+      "out/reference-style/midjourney-quality/reference-3.png"
+    ],
+    "target": "dark cinematic 2D Trini anime trailer quality with gold/orange energy, staff lightning, debris, cracked ground, high contrast, rim light, and dynamic martial action",
+    "textRule": "The reference includes title lettering, but Opaija builds should add title/CTA text in the editor layer, not inside generated artwork."
+  },
+  "characters": [
+    {
+      "id": "kairo-kai-baptiste",
+      "name": "Kairo Kai Baptiste",
+      "referencePath": "/assets/characters/kairo-kai-baptiste.png",
+      "locks": [
+        "black sleeveless hoodie",
+        "red/orange sash",
+        "seed pendant",
+        "medium loc length and silhouette",
+        "detailed Listening Bois scale and wraps",
+        "warm brown skin tone",
+        "youthful focused face"
+      ]
+    },
+    {
+      "id": "mother-lall",
+      "name": "Mother Lall",
+      "referencePath": "/assets/characters/mother-lall.png",
+      "locks": [
+        "elder Guardian authority",
+        "doubles cart energy",
+        "serving spoon as hidden combat tool",
+        "calm powerful glare",
+        "cream/gold Guardian timing accents"
+      ]
+    },
+    {
+      "id": "marius-vale",
+      "name": "Marius Vale",
+      "referencePath": "/assets/characters/marius-vale.png",
+      "locks": [
+        "Stillwater silence threat",
+        "black bois staff",
+        "controlled dread",
+        "no generic villain armor",
+        "black pulse never becomes readable text"
+      ]
+    },
+    {
+      "id": "asha-singh-baptiste",
+      "name": "Asha Singh-Baptiste",
+      "referencePath": "/assets/characters/asha-singh-baptiste.png",
+      "locks": ["archive energy", "teal/gold memory sight", "bandage cords", "focused investigator posture"]
+    },
+    {
+      "id": "nia-toussaint",
+      "name": "Nia Toussaint",
+      "referencePath": "/assets/characters/nia-toussaint.png",
+      "locks": ["lavway scarf", "rhythm bell", "gold voice ribbons", "fear-breaking expression"]
+    },
+    {
+      "id": "malik-st-hill",
+      "name": "Malik St. Hill",
+      "referencePath": "/assets/characters/malik-st-hill.png",
+      "locks": ["red/black Rhythm Break language", "precise rival stance", "clean weapon contact"]
+    },
+    {
+      "id": "papa-etienne-roach",
+      "name": "Papa Etienne Roach",
+      "referencePath": "/assets/characters/papa-etienne-roach.png",
+      "locks": ["sacred cane", "elder authority", "root pulse", "hidden speed"]
+    },
+    {
+      "id": "selah-vale",
+      "name": "Selah Vale",
+      "referencePath": "/assets/characters/selah-vale.png",
+      "locks": ["silence baton", "purple/black accents", "conflicted eyes", "controlled rooftop posture"]
+    },
+    {
+      "id": "tariq-davidson",
+      "name": "Tariq Davidson",
+      "referencePath": "/assets/characters/tariq-davidson.png",
+      "locks": ["Tidewatch staff", "shell pendant", "sea-blue Tobago rhythm", "wind and coast silhouette"]
+    },
+    {
+      "id": "jabari-jabs-henry",
+      "name": "Jabari Jabs Henry",
+      "referencePath": "/assets/characters/jabari-jabs-henry.png",
+      "locks": ["comic consequence energy", "compact Kalinda drum", "L-stick beat sticks", "phone glow with no readable text"]
+    }
+  ]
+}

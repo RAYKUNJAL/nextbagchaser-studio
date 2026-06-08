@@ -1,0 +1,140 @@
+{
+  "project": "OPAIJA: Staff of Battle",
+  "episode": "01 - The First Pulse",
+  "status": "ready_for_art_generation",
+  "styleLock": "Locked OPAIJA 2D Caribbean anime model-sheet style: flat cel-shaded animated-series color, rounded chins, full lips, broad African/Caribbean nose language, expressive warm eyes, clean black ink linework, bright island energy, modern Caribbean streetwear fused with Kalenda/Calinda and Carnival-inspired details, controlled gold/orange/red/teal/cream accents, professional 2D anime clarity, no text, no pseudo-3D, no painterly or glossy AI look.",
+  "modelSheetReferences": [
+    "/assets/characters/kairo-kai-baptiste.png",
+    "/assets/characters/mother-lall.png",
+    "/assets/characters/asha-singh-baptiste.png",
+    "/assets/characters/nia-toussaint.png",
+    "/assets/characters/jabari-jabs-henry.png",
+    "/assets/characters/malik-st-hill.png",
+    "/assets/characters/papa-etienne-roach.png",
+    "/assets/characters/marius-vale.png",
+    "/assets/characters/selah-vale.png",
+    "/assets/characters/tariq-davidson.png"
+  ],
+  "negativePrompt": "No text, no subtitles, no labels, no logo generation, no character sheet grid, no multiple pose sheet, no extra fingers, no broken hands, no broken staff geometry, no generic fantasy armor, no pseudo-3D, no plastic 3D render, no painterly art, no photorealism, no glossy AI look, no face drift, no skin tone drift, no effects covering eyes or weapon contact points, no random crowds blocking the hero.",
+  "frames": [
+    {
+      "imageRef": "@Image1",
+      "panelId": "1A",
+      "title": "Trinidad Wakes",
+      "characters": ["Kai"],
+      "prompt": "Clean cinematic storyboard frame, Trinidad dawn street waking with doubles cart in foreground, old men watching, school uniforms and warm street life, Kairo Kai Baptiste moving through the crowd toward food, approved Kai identity, medium locs, seed pendant, modern Trinidad streetwear, warm gold morning light, 2D Caribbean anime, readable full-body silhouette, no text."
+    },
+    {
+      "imageRef": "@Image2",
+      "panelId": "1B",
+      "title": "Doubles Before Destiny",
+      "characters": ["Kai", "Mother Lall"],
+      "prompt": "Kai at Mother Lall's doubles cart reaching for wrapped doubles, expression shifting from hungry joy to startled focus, Mother Lall partly visible behind the cart, tiny gold rhythm pulse under Kai's sneaker, Trinidad street background, approved character identities, no text."
+    },
+    {
+      "imageRef": "@Image3",
+      "panelId": "2A",
+      "title": "Mother Lall's Warning",
+      "characters": ["Mother Lall"],
+      "prompt": "Close cinematic frame of Mother Lall folding a coded paper sigil into a doubles wrapper, serving spoon and pepper sauce visible, wise secret Guardian energy, cream gold sigil glow, approved Mother Lall identity, no text."
+    },
+    {
+      "imageRef": "@Image4",
+      "panelId": "3A",
+      "title": "Asha Reads The Wall",
+      "characters": ["Asha"],
+      "prompt": "Asha Singh-Baptiste studying faded Guardian marks on an old Trinidad wall, archive notebook, bandage cords twitching near her hand, teal gold memory shimmer through cracked paint, approved Asha identity, no text."
+    },
+    {
+      "imageRef": "@Image5",
+      "panelId": "4A",
+      "title": "The Listening Bois",
+      "characters": ["Kai"],
+      "prompt": "Low-angle close-up storyboard frame, Kai reaching toward The Listening Bois in hidden storage space behind old wall, glowing wood memory veins, half-real gayelle threshold forming behind him, approved Kai face and hand structure, no text."
+    },
+    {
+      "imageRef": "@Image6",
+      "panelId": "4B",
+      "title": "First Pulse Knockback",
+      "characters": ["Kai"],
+      "prompt": "Kai knocked backward by first Opaija pulse, The Listening Bois rolling toward his hand, gold orange ground ring expanding, dust lift, readable body silhouette, no broken staff geometry, approved Kai identity, no text."
+    },
+    {
+      "imageRef": "@Image7",
+      "panelId": "5A",
+      "title": "Street Becomes Gayelle",
+      "characters": ["Kai"],
+      "prompt": "Trinidad street transforming into spiritual gayelle circle, Kai centered holding The Listening Bois, crowd edges blur into ancestral memory silhouettes, gold orange teal rhythm rings, dust and Carnival resistance atmosphere, approved Kai identity, no text."
+    },
+    {
+      "imageRef": "@Image8",
+      "panelId": "5B",
+      "title": "Nia Breaks Fear",
+      "characters": ["Nia"],
+      "prompt": "Nia Toussaint shouting a lavway command, gold sound ribbons bending the air, fear wave breaking around her, lavway scarf and rhythm bell visible, approved Nia identity, warm expressive eyes, no text."
+    },
+    {
+      "imageRef": "@Image9",
+      "panelId": "5C",
+      "title": "Mother Lall Blocks Silence",
+      "characters": ["Mother Lall"],
+      "prompt": "Mother Lall blocking a black silence slash with a serving spoon at her doubles cart, hidden Guardian timing reveal, cream gold impact spark, calm powerful glare, approved Mother Lall identity, no text."
+    },
+    {
+      "imageRef": "@Image10",
+      "panelId": "6A",
+      "title": "Marius Removes Sound",
+      "characters": ["Marius"],
+      "prompt": "Marius Vale silhouette entering muted gayelle, black bois silence staff, black pulse absorbing gold rhythm rings, intimidating stillness, Stillwater threat, approved Marius identity, no generic armor, no text."
+    },
+    {
+      "imageRef": "@Image11",
+      "panelId": "6B",
+      "title": "Selah Watches",
+      "characters": ["Selah"],
+      "prompt": "Selah Vale on rooftop watching Kai below, silence baton in hand, purple black accents, controlled conflicted eyes, wind moving clothing, approved Selah identity, no text."
+    },
+    {
+      "imageRef": "@Image12",
+      "panelId": "7B",
+      "title": "Kai vs Malik Exchange",
+      "characters": ["Kai", "Malik"],
+      "prompt": "Kai and Malik in short readable stick-fighting exchange, Malik precise red black Rhythm Break strike, Kai accidental gold orange Tempo Pulse block, clear weapon contact points, no spinning clutter, approved identities and props, no text."
+    },
+    {
+      "imageRef": "@Image13",
+      "panelId": "7C",
+      "title": "Papa Stops Them",
+      "characters": ["Papa Etienne", "Kai", "Malik"],
+      "prompt": "Papa Etienne Roach stopping Kai and Malik with sacred cane ground strike, root pulse ring opening Guardian mark, elder authority and hidden speed, Kai and Malik frozen at edge of frame, approved identities, no text."
+    },
+    {
+      "imageRef": "@Image14",
+      "panelId": "9A",
+      "title": "Jabs Posts The Rumor",
+      "characters": ["Jabs"],
+      "prompt": "Jabs holding phone in panic after accidentally posting blurred Opaija footage, compact Kalinda drum and L-stick beat sticks visible, rhythm static around phone, comedy into consequence, approved Jabs identity, no readable phone text."
+    },
+    {
+      "imageRef": "@Image15",
+      "panelId": "10A",
+      "title": "Tobago Answers",
+      "characters": ["Tariq"],
+      "prompt": "Tariq Davidson on Tobago coast planting Tidewatch staff into sand, shell pendant glowing, sea blue tide rhythm marks across moonlit Caribbean water, wind in sea cloth sash, approved Tariq identity, no text."
+    },
+    {
+      "imageRef": "@Image16",
+      "panelId": "10B",
+      "title": "Stillwater Command",
+      "characters": ["Marius", "Selah", "Stillwater Order"],
+      "prompt": "Marius Vale before the Stillwater Order in a black drum circle chamber, Selah nearby, Mute Boismen silhouettes, black pulse, symbol is abstract black drum circle with no center pulse, no text, approved identities."
+    },
+    {
+      "imageRef": "@Image17",
+      "panelId": "10C",
+      "title": "Final Cliffhanger",
+      "characters": ["Marius", "Kai"],
+      "prompt": "Cinematic cliffhanger frame, visual split between Marius in black silence and Kai hearing impossible silent drumbeat, gold sea blue pulse answering black ring, intense unresolved stare, approved identities, no text."
+    }
+  ]
+}

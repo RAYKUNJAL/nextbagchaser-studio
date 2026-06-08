@@ -1,0 +1,77 @@
+{
+  "buildId": "season-one-episode-01-the-first-pulse",
+  "status": "ready_for_storyboard_art_generation",
+  "updatedAt": "2026-06-05",
+  "operatorIntent": "No more tests. Build Episode 1 as a live franchise-quality production package, then move to storyboard art and Seedance reference-to-video.",
+  "memoryInputs": [
+    "ops/memory/shared-memory.json",
+    "ops/memory/season-one-franchise-bible.json",
+    "ops/memory/opaija-style-god-memory.json",
+    "ops/memory/story-format-writer-memory.json",
+    "ops/agents/season-one-agent-roster.json"
+  ],
+  "productionInputs": [
+    "ops/production/season-one/episode-01-the-first-pulse/episode-01-production-packet.json",
+    "ops/production/season-one/episode-01-the-first-pulse/episode-01-storyboard-action-sheet.md",
+    "ops/production/season-one/episode-01-the-first-pulse/seedance-handoff.json"
+  ],
+  "agentAssignments": [
+    {
+      "agent": "Goose Showrunner",
+      "task": "Approve Episode 1 story spine, pacing, and cliffhanger pressure.",
+      "input": "episode-01-production-packet.json",
+      "output": "episode-01-showrunner-notes.md"
+    },
+    {
+      "agent": "Stillwater Villain Room",
+      "task": "Strengthen Marius, Selah, and Stillwater threat across scenes 6 and 10.",
+      "input": "season-one-franchise-bible.json",
+      "output": "episode-01-villain-pressure-pass.md"
+    },
+    {
+      "agent": "Storyboard Director",
+      "task": "Generate clean storyboard frame prompts for @Image1 through @Image17.",
+      "input": "episode-01-storyboard-action-sheet.md",
+      "output": "storyboard-frame-prompts.json"
+    },
+    {
+      "agent": "Character Continuity QC",
+      "task": "Check every frame prompt against approved model sheets, props, face, hair, wardrobe, power rules, and no text/no grid constraints.",
+      "input": "storyboard-frame-prompts.json",
+      "output": "storyboard-continuity-qc.json"
+    },
+    {
+      "agent": "Seedance Prompt Engineer",
+      "task": "Use generated storyboard frames as ordered @Image references and submit the motion instructions from seedance-handoff.json.",
+      "input": "seedance-handoff.json",
+      "output": "seedance-submit-ready.json"
+    },
+    {
+      "agent": "Voice and Edit Director",
+      "task": "Build narrator voice script, caption timing, thumbnail moment, and Remotion edit notes.",
+      "input": "episode-01-production-packet.json",
+      "output": "episode-01-edit-manifest.json"
+    },
+    {
+      "agent": "Lore Guardian",
+      "task": "Final canon review before public render or paid media spend.",
+      "input": "all episode outputs",
+      "output": "episode-01-lore-qc.json"
+    }
+  ],
+  "gates": [
+    {
+      "name": "Storyboard art gate",
+      "requirement": "All @Image storyboard frames must preserve character identity and avoid text/grid/reference-sheet layout."
+    },
+    {
+      "name": "Seedance gate",
+      "requirement": "Only submit storyboard production frames, not raw model sheets."
+    },
+    {
+      "name": "Live spend gate",
+      "requirement": "Use configured live providers only after Lore Guardian and Character Continuity QC pass."
+    }
+  ],
+  "nextCommandCenterAction": "Open /command/video, run production mode or use these packet files as source for the storyboard/video builder."
+}

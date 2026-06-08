@@ -1,0 +1,155 @@
+{
+  "project": "OPAIJA: Staff of Battle",
+  "season": "Blood of the Gayelle",
+  "episode": "01 - The First Pulse",
+  "handoffType": "Seedance reference-to-video production packet",
+  "status": "ready_for_storyboard_art_then_seedance",
+  "providerTarget": "fal/Seedance 2.0 reference-to-video",
+  "aspectRatio": "9:16",
+  "styleLock": "2D Caribbean anime model-sheet style, flat cel-shaded animated-series color, clean black ink, bright Caribbean palette, rounded chins, full lips, broad African/Caribbean nose language, readable silhouettes, no text in generated frames, no pseudo-3D or painterly AI look.",
+  "referenceRule": "Generate clean storyboard production frames first. Do not send raw model sheets as the animation frame source. Use model sheets only for identity reference while producing each @Image storyboard frame.",
+  "globalNegative": [
+    "no character drift",
+    "no extra fingers",
+    "no broken staff geometry",
+    "no random crowds",
+    "no text or logos generated inside frames",
+    "no reference sheet grid",
+    "no effects covering eyes, hands, weapons, or silhouettes",
+    "no generic fantasy armor",
+    "no pseudo-3D, plastic, painterly, photoreal, or glossy AI art"
+  ],
+  "masterPrompt": "Animate the ordered OPAIJA Episode 1 storyboard frames as a fast-paced 2D Caribbean anime sequence. Preserve exact approved character identities from the reference frames. Use Trinidad street rhythm, doubles cart warmth, gold/orange Opaija pulse, teal memory sight, red-black rhythm break, sea-blue Tobago tide signal, and black Stillwater silence. Each shot must have readable action, controlled camera movement, and strong cliffhanger energy. No generated text. No character morphing.",
+  "orderedReferences": [
+    {
+      "imageRef": "@Image1",
+      "panelId": "1A",
+      "title": "Trinidad Wakes",
+      "durationSec": 4,
+      "motion": "Crane-down into street-level tracking. Crowd moves naturally. Kai heads toward the doubles cart."
+    },
+    {
+      "imageRef": "@Image2",
+      "panelId": "1B",
+      "title": "Doubles Before Destiny",
+      "durationSec": 4,
+      "motion": "Comedic push-in on Kai reaching for doubles; hidden pulse under sneaker makes him freeze."
+    },
+    {
+      "imageRef": "@Image3",
+      "panelId": "2A",
+      "title": "Mother Lall's Warning",
+      "durationSec": 4,
+      "motion": "Spoon taps; wrapper folds; coded sigil glows briefly."
+    },
+    {
+      "imageRef": "@Image4",
+      "panelId": "3A",
+      "title": "Asha Reads The Wall",
+      "durationSec": 4,
+      "motion": "Slow push from cracked wall mark to Asha's eye; teal memory shimmer rolls through paint."
+    },
+    {
+      "imageRef": "@Image5",
+      "panelId": "4A",
+      "title": "The Listening Bois",
+      "durationSec": 5,
+      "motion": "Kai touches staff; wood veins glow; dust lifts."
+    },
+    {
+      "imageRef": "@Image6",
+      "panelId": "4B",
+      "title": "First Pulse Knockback",
+      "durationSec": 4,
+      "motion": "Ground ring expands; Kai slides back; staff rolls to his hand."
+    },
+    {
+      "imageRef": "@Image7",
+      "panelId": "5A",
+      "title": "Street Becomes Gayelle",
+      "durationSec": 5,
+      "motion": "360 camera move as street phases into ancestral gayelle circle."
+    },
+    {
+      "imageRef": "@Image8",
+      "panelId": "5B",
+      "title": "Nia Breaks Fear",
+      "durationSec": 4,
+      "motion": "Nia inhales, shouts, gold sound ribbons break black static."
+    },
+    {
+      "imageRef": "@Image9",
+      "panelId": "5C",
+      "title": "Mother Lall Blocks Silence",
+      "durationSec": 4,
+      "motion": "Black slash enters; spoon intercepts; cream/gold impact spark; Mother Lall holds calm glare."
+    },
+    {
+      "imageRef": "@Image10",
+      "panelId": "6A",
+      "title": "Marius Removes Sound",
+      "durationSec": 5,
+      "motion": "Locked dread shot; black pulse expands and absorbs gold rhythm."
+    },
+    {
+      "imageRef": "@Image11",
+      "panelId": "6B",
+      "title": "Selah Watches",
+      "durationSec": 4,
+      "motion": "Rooftop wind; baton tilts; Selah's eyes narrow."
+    },
+    {
+      "imageRef": "@Image12",
+      "panelId": "7B",
+      "title": "Kai vs Malik Exchange",
+      "durationSec": 6,
+      "motion": "One readable strike, block, low sweep, stumble, accidental pulse. No messy spinning."
+    },
+    {
+      "imageRef": "@Image13",
+      "panelId": "7C",
+      "title": "Papa Stops Them",
+      "durationSec": 4,
+      "motion": "Cane hits ground; root pulse freezes both fighters; Guardian mark opens."
+    },
+    {
+      "imageRef": "@Image14",
+      "panelId": "9A",
+      "title": "Jabs Posts The Rumor",
+      "durationSec": 4,
+      "motion": "Phone glow pulses; Jabs panics; rhythm static suggests the clip spread without showing readable text."
+    },
+    {
+      "imageRef": "@Image15",
+      "panelId": "10A",
+      "title": "Tobago Answers",
+      "durationSec": 5,
+      "motion": "Tariq plants Tidewatch staff; sea-blue tide marks glow across sand."
+    },
+    {
+      "imageRef": "@Image16",
+      "panelId": "10B",
+      "title": "Stillwater Command",
+      "durationSec": 5,
+      "motion": "Black pulse expands; Stillwater crew silhouettes kneel; Marius raises silence staff."
+    },
+    {
+      "imageRef": "@Image17",
+      "panelId": "10C",
+      "title": "Final Cliffhanger",
+      "durationSec": 4,
+      "motion": "Marius stillness match-cuts to Kai hearing the silent drumbeat. End on unresolved stare."
+    }
+  ],
+  "voiceover": [
+    "In Trinidad, rhythm does not wait for permission.",
+    "It hides in traffic, steelpan, school shoes, old jokes, and doubles before sunrise.",
+    "Kai Baptiste thought the day was chasing him.",
+    "He did not know the rhythm had already found him.",
+    "A stick has memory. A fighter has spirit. A drum has rhythm. A lavway has command.",
+    "And when the gayelle opens, every hidden debt comes due.",
+    "The first key woke.",
+    "Now the rest of the islands will answer."
+  ],
+  "nextStep": "Generate @Image1-@Image17 storyboard frames using approved character references, then submit the ordered frame sequence and masterPrompt to Seedance/fal."
+}

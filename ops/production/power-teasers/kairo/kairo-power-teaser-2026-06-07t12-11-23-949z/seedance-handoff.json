@@ -1,0 +1,98 @@
+{
+  "provider": "openrouter-seedance",
+  "durationSource": "audio-action-beat-sheet",
+  "orderedReferences": [
+    {
+      "imageRef": "@Image1",
+      "panelId": "B1-START",
+      "beatId": "B1",
+      "instruction": "Use as @Image reference for Hook Hit start pose."
+    },
+    {
+      "imageRef": "@Image2",
+      "panelId": "B1-IMPACT",
+      "beatId": "B1",
+      "instruction": "Use as @Image reference for Hook Hit impact pose."
+    },
+    {
+      "imageRef": "@Image3",
+      "panelId": "B1-END",
+      "beatId": "B1",
+      "instruction": "Use as @Image reference for Hook Hit end pose."
+    },
+    {
+      "imageRef": "@Image4",
+      "panelId": "B2-START",
+      "beatId": "B2",
+      "instruction": "Use as @Image reference for Identity Reveal start pose."
+    },
+    {
+      "imageRef": "@Image5",
+      "panelId": "B2-IMPACT",
+      "beatId": "B2",
+      "instruction": "Use as @Image reference for Identity Reveal impact pose."
+    },
+    {
+      "imageRef": "@Image6",
+      "panelId": "B2-END",
+      "beatId": "B2",
+      "instruction": "Use as @Image reference for Identity Reveal end pose."
+    },
+    {
+      "imageRef": "@Image7",
+      "panelId": "B3-START",
+      "beatId": "B3",
+      "instruction": "Use as @Image reference for Power Action start pose."
+    },
+    {
+      "imageRef": "@Image8",
+      "panelId": "B3-IMPACT",
+      "beatId": "B3",
+      "instruction": "Use as @Image reference for Power Action impact pose."
+    },
+    {
+      "imageRef": "@Image9",
+      "panelId": "B3-END",
+      "beatId": "B3",
+      "instruction": "Use as @Image reference for Power Action end pose."
+    },
+    {
+      "imageRef": "@Image10",
+      "panelId": "B4-START",
+      "beatId": "B4",
+      "instruction": "Use as @Image reference for Threat Cliffhanger start pose."
+    },
+    {
+      "imageRef": "@Image11",
+      "panelId": "B4-IMPACT",
+      "beatId": "B4",
+      "instruction": "Use as @Image reference for Threat Cliffhanger impact pose."
+    },
+    {
+      "imageRef": "@Image12",
+      "panelId": "B4-END",
+      "beatId": "B4",
+      "instruction": "Use as @Image reference for Threat Cliffhanger end pose."
+    },
+    {
+      "imageRef": "@Image13",
+      "panelId": "B5-START",
+      "beatId": "B5",
+      "instruction": "Use as @Image reference for CTA Hold start pose."
+    },
+    {
+      "imageRef": "@Image14",
+      "panelId": "B5-IMPACT",
+      "beatId": "B5",
+      "instruction": "Use as @Image reference for CTA Hold impact pose."
+    },
+    {
+      "imageRef": "@Image15",
+      "panelId": "B5-END",
+      "beatId": "B5",
+      "instruction": "Use as @Image reference for CTA Hold end pose."
+    }
+  ],
+  "masterPrompt": "Kairo \"Kai\" Baptiste (Kai) is the only featured character unless another named Opaija character is explicitly requested. Role: Main hero / first Opaija Seed wielder. Island logic: Trinidad. Power: Tempo Pulse + Echo Pulse. Weapon/prop focus: The Listening Bois. Preserve the approved reference art face, hair, skin tone, silhouette, wardrobe language, symbols, weapon scale, and proportions. Use storyboard frames as cinematic production frames, not as character sheets. Maintain the same character identity through every shot and transition. If motion becomes complex, prioritize face stability, hand readability, weapon continuity, and clear silhouette over flashy camera movement. Build a 27.5 second vertical power teaser for Kairo \"Kai\" Baptiste. Follow the audio-action beat sheet exactly. Sync camera moves, impacts, SFX moments, and voice placements to the timecodes. Use start/impact/end references as pose anchors. Do not generate text, logos, subtitles, watermarks, crowds, or reference sheets.",
+  "negativePrompt": "text, letters, subtitles, watermark, logo, cropped staff, missing weapon, face drift, skin tone drift, costume redesign, broken hands, extra fingers, random crowd, reference sheet grid, collage, melted weapon"
+}
