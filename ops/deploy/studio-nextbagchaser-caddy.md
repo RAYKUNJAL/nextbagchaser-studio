@@ -23,4 +23,4 @@ Keep public cartoon brand sites such as `opaija.com` as separate public routes. 
 
 ## Likkle Games traffic site
 
-`https://likkle-games.nextbagchaser.com/` is a separate Caddy static site (`via: 1.1 Caddy`, byte ranges). It is not the studio app at `/var/www/opaija`. This repo does not record that host's on-disk document root; confirm it in the VPS Caddyfile for `likkle-games.nextbagchaser.com`. The recovered source of truth for Reef Rescue and the shared platform script is `sites/likkle-games/`. Do not deploy it from the studio reverse proxy.
+`https://likkle-games.nextbagchaser.com/` is a separate Caddy static site. Its document root on the VPS is `/opt/likkle-island-arcade/public/`. The matching files in this repo are `public/games/`, `public/platform.js`, and `public/styles.css`. Do not deploy them from the studio reverse proxy.

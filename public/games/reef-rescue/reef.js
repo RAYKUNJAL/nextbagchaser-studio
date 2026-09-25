@@ -84,13 +84,17 @@
   function lessonFor(number = level) { return LESSONS[(number - 1) % LESSONS.length]; }
   function configFor(number = level) {
     const band = Math.floor((number - 1) / 10);
+    // Guest rounds stay clearable, but they last long enough to feel like a rescue
+    // instead of a handful of taps. Later bands add time, targets, and speed.
+    const duration = number <= 3 ? 70 + number * 10 : Math.min(180, 110 + band * 7 + Math.floor(number / 2));
+    const target = number <= 3 ? 900 + number * 280 : 1500 + number * 70 + band * 180;
     return {
-      duration: Math.max(25, 36 - Math.floor(number / 15)),
-      target: 300 + number * 45 + band * 75,
-      spawnMs: Math.max(300, 820 - number * 4.8),
-      speed: 52 + number * 1.22,
-      wildlifeChance: Math.min(.34, .12 + number * .0022),
-      bonusChance: number > 4 ? .035 : .015
+      duration,
+      target,
+      spawnMs: Math.max(480, 1120 - number * 5 - band * 12),
+      speed: Math.min(92, (number <= 3 ? 40 : 46) + number * 0.48),
+      wildlifeChance: Math.min(.32, (number <= 3 ? .07 : .1) + number * .0016),
+      bonusChance: number > 4 ? .04 : .02
     };
   }
   function stampCount() { return Object.keys(saved.completed || {}).length; }
@@ -109,6 +113,7 @@
     els.guideEmoji.textContent = zone.emoji; els.guideName.textContent = zone.guide;
     els.factTitle.textContent = lesson[0]; els.factText.textContent = lesson[1]; els.actionText.textContent = lesson[2];
     els.level.textContent = selectedLevel; els.target.textContent = `${formatScore(configFor(selectedLevel).target)} points`;
+    if (!running && !starting) timeLeft = configFor(selectedLevel).duration;
     els.difficulty.textContent = difficultyText(selectedLevel);
     els.startLabel.textContent = `Level ${selectedLevel} · ${zone.name}`;
     const stamps = stampCount(); els.stamps.textContent = stamps; els.passportText.textContent = `${stamps} / 100 stamps`; els.passportFill.style.width = `${stamps}%`;
