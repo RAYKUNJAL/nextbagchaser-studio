@@ -52,7 +52,7 @@
 
   const $ = selector => document.querySelector(selector);
   const els = {
-    arena: $("#arena"), layer: $("#entityLayer"), particles: $("#particleLayer"), countdown: $("#countdown"), coach: $("#coachBubble"),
+    arena: $("#playfield"), layer: $("#entityLayer"), particles: $("#particleLayer"), countdown: $("#countdown"), coach: $("#coachBubble"),
     score: $("#scoreValue"), best: $("#bestValue"), combo: $("#comboValue"), stamps: $("#stampValue"), lives: $("#livesValue"), time: $("#timeValue"),
     level: $("#levelNumber"), target: $("#targetScore"), targetFill: $("#targetFill"), targetMeter: $(".rr-meter"), difficulty: $("#difficultyLabel"),
     zoneFlag: $("#zoneFlag"), zoneName: $("#zoneName"), guideEmoji: $("#guideEmoji"), guideName: $("#guideName"), factTitle: $("#factTitle"), factText: $("#factText"), actionText: $("#actionText"), passportText: $("#passportText"), passportFill: $("#passportFill"),
@@ -154,6 +154,22 @@
   }
 
   function clearEntities() { entities.forEach(item => item.element.remove()); entities = []; els.particles.replaceChildren(); }
+  function entitySize() { return window.innerWidth < 740 ? 58 : 64; }
+  function playfieldLimits(size) {
+    return { maxX: Math.max(0, els.arena.clientWidth - size), maxY: Math.max(0, els.arena.clientHeight - size) };
+  }
+  function placeEntity(item) {
+    const limits = playfieldLimits(item.size);
+    const sway = Math.sin(item.wave) * Math.min(12, limits.maxX);
+    const drawX = Math.min(limits.maxX, Math.max(0, item.x + sway));
+    const drawY = Math.min(limits.maxY, Math.max(0, item.y));
+    item.drawX = drawX; item.drawY = drawY;
+    item.element.style.left = `${drawX}px`;
+    item.element.style.top = `${drawY}px`;
+    item.element.style.width = `${item.size}px`;
+    item.element.style.height = `${item.size}px`;
+    item.element.style.transform = "none";
+  }
   function spawnEntity() {
     if (!running || paused) return;
     const config = configFor();
@@ -162,15 +178,27 @@
     if (roll < config.bonusChance) { kind = "bonus"; data = { icon: "⭐", label: "reef boost", points: 140 }; }
     else if (roll < config.bonusChance + config.wildlifeChance) { kind = "wildlife"; data = WILDLIFE[Math.floor(Math.random() * WILDLIFE.length)]; }
     else { data = TRASH[Math.floor(Math.random() * Math.min(TRASH.length, 4 + Math.ceil(level / 20)))]; }
-    const size = window.innerWidth < 740 ? 58 : 64;
-    const width = els.arena.clientWidth;
-    const element = document.createElement("button");
-    element.type = "button"; element.className = "rr-entity"; element.dataset.kind = kind; element.setAttribute("aria-label", kind === "wildlife" ? `Protect the ${data.label}; do not tap` : `Clear ${data.label}`);
+    const size = entitySize();
+    const limits = playfieldLimits(size);
+    const element = document.createElement("div");
+    element.className = "rr-entity"; element.dataset.kind = kind;
+    element.setAttribute("role", "presentation");
     element.innerHTML = `<span aria-hidden="true">${data.icon}</span>`;
-    const item = { element, kind, data, x: 8 + Math.random() * Math.max(20, width - size - 16), y: -size, speed: config.speed * (.78 + Math.random() * .52), wave: Math.random() * 6.28, hits: data.tough ? 2 : 1 };
+    const item = { element, kind, data, size, x: Math.random() * limits.maxX, y: 0, speed: config.speed * (.78 + Math.random() * .52), wave: Math.random() * 6.28, hits: data.tough ? 2 : 1, drawX: 0, drawY: 0 };
     if (kind === "wildlife") item.speed *= .72;
-    element.addEventListener("pointerdown", event => { event.preventDefault(); hitEntity(item); }, { passive: false });
+    placeEntity(item);
     els.layer.append(element); entities.push(item);
+  }
+  function entityAtPoint(clientX, clientY) {
+    const rect = els.arena.getBoundingClientRect();
+    const x = clientX - rect.left - els.arena.clientLeft;
+    const y = clientY - rect.top - els.arena.clientTop;
+    let found = null;
+    for (const item of entities) {
+      if (!item.element.isConnected) continue;
+      if (x >= item.drawX && x <= item.drawX + item.size && y >= item.drawY && y <= item.drawY + item.size) found = item;
+    }
+    return found;
   }
   function hitEntity(item) {
     if (!running || paused || !entities.includes(item)) return;
@@ -180,7 +208,7 @@
       if (navigator.vibrate) navigator.vibrate(70); updateHUD(); if (lives <= 0) finish(false, "The reef needs another try"); return;
     }
     item.hits--;
-    if (item.hits > 0) { floatText(item, "Tap again!", "#fff0a3"); item.element.animate([{ transform: "translate(var(--x),var(--y)) rotate(-8deg)" }, { transform: "translate(var(--x),var(--y)) rotate(8deg)" }], { duration: 140, iterations: 2 }); tone("hit"); return; }
+    if (item.hits > 0) { floatText(item, "Tap again!", "#fff0a3"); item.element.querySelector("span")?.animate([{ transform: "rotate(-8deg)" }, { transform: "rotate(8deg)" }], { duration: 140, iterations: 2 }); tone("hit"); return; }
     combo++; bestCombo = Math.max(bestCombo, combo); cleared++;
     const multiplier = Math.min(4, 1 + Math.floor((combo - 1) / 5));
     const gained = item.data.points * multiplier; score += gained;
@@ -191,7 +219,12 @@
   }
   function removeEntity(item, animate = false) {
     const index = entities.indexOf(item); if (index >= 0) entities.splice(index, 1);
-    if (animate) { item.element.classList.add("rr-hit"); setTimeout(() => item.element.remove(), 270); } else item.element.remove();
+    item.element.style.transform = "none";
+    item.element.style.pointerEvents = "none";
+    if (!animate) { item.element.remove(); return; }
+    item.element.classList.add("rr-hit");
+    els.particles.append(item.element);
+    setTimeout(() => item.element.remove(), 270);
   }
   function floatText(item, text, color) {
     const label = document.createElement("span"); label.className = "rr-float-text"; label.textContent = text; label.style.color = color;
@@ -208,14 +241,15 @@
     const delta = Math.min(.04, (now - lastFrame) / 1000 || 0); lastFrame = now; elapsed += delta; timeLeft -= delta; spawnClock += delta * 1000;
     const config = configFor();
     while (spawnClock >= config.spawnMs) { spawnClock -= config.spawnMs; spawnEntity(); }
-    const limit = els.arena.clientHeight - 54;
     [...entities].forEach(item => {
       item.y += item.speed * delta; item.wave += delta * 2.4;
-      const sway = Math.sin(item.wave) * 12; item.element.style.setProperty("--x", `${item.x + sway}px`); item.element.style.setProperty("--y", `${item.y}px`); item.element.style.transform = `translate(${item.x + sway}px,${item.y}px)`;
-      if (item.y >= limit) {
+      const limits = playfieldLimits(item.size);
+      if (item.y >= limits.maxY) {
         removeEntity(item);
         if (item.kind === "trash") { lives--; combo = 0; tone("miss"); coach("Rubbish reached the coral—keep watch near the bottom!"); if (navigator.vibrate) navigator.vibrate(45); }
+        return;
       }
+      placeEntity(item);
     });
     updateHUD();
     if (lives <= 0) finish(false, "Too much rubbish reached the coral");
@@ -339,6 +373,21 @@
   };
   els.play.addEventListener("pointerdown", pressStart);
   els.play.addEventListener("click", pressStart);
+  const handledPointers = new Set();
+  const onPlayfieldPointer = event => {
+    if (!running || paused) return;
+    if (event.type === "pointerdown") { if (event.button > 0) return; }
+    else if (event.type === "pointerup") {
+      if (event.pointerId == null || handledPointers.has(event.pointerId)) { handledPointers.delete(event.pointerId); return; }
+    } else return;
+    const item = entityAtPoint(event.clientX, event.clientY);
+    if (!item) return;
+    if (event.cancelable) event.preventDefault();
+    if (event.type === "pointerdown" && event.pointerId != null) handledPointers.add(event.pointerId);
+    hitEntity(item);
+  };
+  els.arena.addEventListener("pointerdown", onPlayfieldPointer, { capture: true, passive: false });
+  els.arena.addEventListener("pointerup", onPlayfieldPointer, { capture: true, passive: false });
   els.chooseLevel.addEventListener("click", () => { buildLevelGrid(); els.startOverlay.hidden = true; els.levelsOverlay.hidden = false; });
   els.levels.addEventListener("click", () => { if (starting) { runToken++; starting = false; releaseCountdown(); } if (running) pauseGame(true); buildLevelGrid(); els.levelsOverlay.hidden = false; });
   els.closeLevels.addEventListener("click", () => { els.levelsOverlay.hidden = true; if (running && paused) pauseGame(false); else if (!running) els.startOverlay.hidden = false; });

@@ -6,8 +6,11 @@
 @media(prefers-reduced-motion:reduce){.rr-bubbles i,.rr-entity[data-kind="bonus"] span{animation:none}.rr-meter span,.rr-mini-meter span{transition:none}}
 .rr-hud,.rr-sun-rays,.rr-island,.rr-bubbles,.rr-reef-back,.rr-coach-bubble,.rr-particle-layer{pointer-events:none}
 .rr-entity-layer{z-index:6}
-.rr-entity{touch-action:manipulation}
+#playfield{touch-action:manipulation}
+.rr-entity{left:0;top:0;margin:0;touch-action:manipulation;pointer-events:auto;will-change:auto;transform:none}
 .rr-entity span{pointer-events:none}
+.rr-entity.rr-hit{animation:rr-fade .28s forwards;transform:none}
+@keyframes rr-fade{to{opacity:0}}
 .rr-primary-button,.rr-text-button,.rr-secondary-button{touch-action:manipulation}
 .rr-countdown{pointer-events:none}
 .rr-countdown:not([hidden]){pointer-events:auto}
