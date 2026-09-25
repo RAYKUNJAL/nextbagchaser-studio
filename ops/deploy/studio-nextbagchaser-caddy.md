@@ -20,3 +20,7 @@ OWNER_PASSWORD=use-a-long-private-password
 ```
 
 Keep public cartoon brand sites such as `opaija.com` as separate public routes. The studio route is the private master hub.
+
+## Likkle Games traffic site
+
+`https://likkle-games.nextbagchaser.com/` is a separate Caddy static site. Its document root on the VPS is `/opt/likkle-island-arcade/public/`. The matching files in this repo are `public/games/`, `public/platform.js`, and `public/styles.css`. Do not deploy them from the studio reverse proxy.

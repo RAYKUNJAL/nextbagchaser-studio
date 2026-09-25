@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#17154d">
+  <meta name="description" content="Test your Caribbean island knowledge in a colorful free trivia adventure.">
+  <title>Island Quiz Quest · Likkle Legends</title>
+  <link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="./quiz.css">
+</head>
+<body class="quiz-page">
+  <div id="quizConfetti" class="quiz-confetti" aria-hidden="true"></div>
+  <header class="quiz-nav"><a href="/" class="quiz-brand"><span>✦</span><b>Likkle Legends</b></a><div><button id="soundButton" type="button" aria-label="Toggle sound">♪ Sound on</button><a href="/">All games</a></div></header>
+  <main class="quiz-shell">
+    <section class="quiz-intro">
+      <p class="eyebrow">Caribbean culture challenge</p><h1>Island Quiz <span>Quest</span></h1><p>Match each island with its foods, wildlife, flags and cultural treasures.</p>
+      <div class="quiz-stats"><div><span>Level</span><strong id="levelText">1 / 64</strong></div><div><span>Score</span><strong id="scoreText">0</strong></div><div><span>Streak</span><strong id="streakText">0</strong></div></div>
+    </section>
+    <section class="question-card" aria-live="polite">
+      <div class="question-progress"><span id="chapterText">Trinidad &amp; Tobago</span><div><i id="progressBar"></i></div></div>
+      <div id="visual" class="question-visual"></div>
+      <p id="questionType" class="question-type">ISLAND FOOD</p><h2 id="questionText">Loading your first question…</h2>
+      <div id="answers" class="answer-grid"></div>
+      <div id="feedback" class="feedback" hidden><strong id="feedbackTitle"></strong><p id="feedbackText"></p><button id="nextButton" type="button">Next island challenge <span>›</span></button></div>
+    </section>
+    <aside class="quiz-fact"><b>How to play</b><span>Choose the answer that matches the island. Wrong answers can be tried again. Every correct answer adds a passport stamp.</span></aside>
+  </main>
+  <script src="/platform.js" defer></script><script src="./quiz.js" defer></script>
+</body>
+</html>

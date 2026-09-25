@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#041f3a">
+  <meta name="description" content="Rescue a Caribbean reef, protect sea life, and learn how healthy oceans help our islands.">
+  <title>Reef Rescue | Likkle Legends</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="./reef.css">
+</head>
+<body class="rr-body">
+  <main class="rr-app" aria-label="Reef Rescue game">
+    <header class="rr-topbar">
+      <a class="rr-brand" href="/" aria-label="Back to Likkle Legends games">
+        <span class="rr-brand-mark">✦</span>
+        <span><b>Likkle Legends</b><small>Reef Rescue</small></span>
+      </a>
+      <div class="rr-top-actions">
+        <button id="soundButton" class="rr-icon-button" type="button" aria-label="Turn sound off" title="Sound">🔊</button>
+        <button id="pauseButton" class="rr-top-button" type="button" disabled>Ⅱ <span>Pause</span></button>
+        <button id="restartButton" class="rr-top-button" type="button" disabled>↻ <span>Restart</span></button>
+      </div>
+    </header>
+
+    <section class="rr-heading">
+      <div>
+        <p class="rr-eyebrow">Caribbean Ocean Adventure</p>
+        <h1>Reef <span>Rescue</span></h1>
+      </div>
+      <p>Tap the rubbish before it reaches the coral. Keep your eyes open—our sea creatures are friends, not targets!</p>
+    </section>
+
+    <section class="rr-layout">
+      <aside class="rr-panel rr-mission-panel" aria-label="Current mission">
+        <div class="rr-zone-badge"><span id="zoneFlag">🇧🇿</span><div><small>Exploring</small><strong id="zoneName">Belize Barrier Reef</strong></div></div>
+        <div class="rr-level-line"><span>Level</span><strong><span id="levelNumber">1</span> / 100</strong></div>
+        <div class="rr-target-card">
+          <span class="rr-eyebrow">Mission target</span>
+          <strong id="targetScore">350 points</strong>
+          <div class="rr-meter" role="progressbar" aria-label="Mission progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="targetFill"></span></div>
+          <small id="difficultyLabel">Trainee rescuer</small>
+        </div>
+        <div class="rr-stats-grid">
+          <div><small>Score</small><strong id="scoreValue">0</strong></div>
+          <div><small>Best</small><strong id="bestValue">0</strong></div>
+          <div><small>Combo</small><strong id="comboValue">×1</strong></div>
+          <div><small>Stamps</small><strong id="stampValue">0</strong></div>
+        </div>
+        <button id="levelsButton" class="rr-secondary-button" type="button">Explore all 100 levels</button>
+      </aside>
+
+      <section class="rr-stage-wrap" aria-label="Reef play area">
+        <div class="rr-hud">
+          <div class="rr-lives" aria-label="Reef health"><span>Reef health</span><strong id="livesValue">♥ ♥ ♥</strong></div>
+          <div class="rr-timer"><span aria-hidden="true">◷</span><strong id="timeValue">35</strong><small>sec</small></div>
+        </div>
+        <div id="playfield" class="rr-arena" role="application" aria-label="Tap rubbish to protect the reef">
+          <div class="rr-sun-rays" aria-hidden="true"></div>
+          <div class="rr-bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="rr-island" aria-hidden="true"></div>
+          <div class="rr-reef-back" aria-hidden="true"></div>
+          <div id="entityLayer" class="rr-entity-layer"></div>
+          <div id="particleLayer" class="rr-particle-layer" aria-hidden="true"></div>
+          <div class="rr-reef-front" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <div id="coachBubble" class="rr-coach-bubble" aria-live="polite">
+            <span class="rr-coach-avatar">🦀</span><p><strong>Kori says:</strong> Tap rubbish. Let wildlife swim safely!</p>
+          </div>
+          <div id="countdown" class="rr-countdown" aria-live="assertive" hidden>3</div>
+        </div>
+        <div class="rr-legend" aria-label="Game key">
+          <span><i class="rr-key rubbish">♻</i> Tap rubbish</span>
+          <span><i class="rr-key wildlife">🐢</i> Protect wildlife</span>
+          <span><i class="rr-key bonus">⭐</i> Catch bonuses</span>
+        </div>
+      </section>
+
+      <aside class="rr-panel rr-learn-panel" aria-label="Reef learning card">
+        <p class="rr-eyebrow">Reef Ranger Academy</p>
+        <div class="rr-guide"><span id="guideEmoji">🐢</span><div><small>Your guide</small><strong id="guideName">Tali the Turtle</strong></div></div>
+        <h2 id="factTitle">A living underwater city</h2>
+        <p id="factText">Coral reefs are made by tiny animals called coral polyps. Many fish depend on their reefs for food and shelter.</p>
+        <div class="rr-action-tip"><span>🌊</span><p><b>Ranger action</b><br><span id="actionText">Keep plastic out of drains, rivers and beaches.</span></p></div>
+        <div class="rr-passport-line"><span>Reef Passport</span><b id="passportText">0 / 100 stamps</b></div>
+        <div class="rr-mini-meter"><span id="passportFill"></span></div>
+      </aside>
+    </section>
+  </main>
+
+  <div id="startOverlay" class="rr-overlay" role="dialog" aria-modal="true" aria-labelledby="startTitle">
+    <section class="rr-modal rr-start-card">
+      <span class="rr-modal-icon">🐠</span>
+      <p class="rr-eyebrow">Likkle Legends Games</p>
+      <h2 id="startTitle">The Caribbean reef needs <span>you!</span></h2>
+      <p>Clear ocean rubbish, protect wildlife and earn a stamp in every mission. One hundred levels take you across ten Caribbean reef zones.</p>
+      <div class="rr-how-row">
+        <div><b>1</b><span>Spot rubbish</span></div><div><b>2</b><span>Tap it fast</span></div><div><b>3</b><span>Save the reef</span></div>
+      </div>
+      <div class="rr-selected-level"><span>Next mission</span><strong id="startLevelLabel">Level 1 · Belize Barrier Reef</strong></div>
+      <button id="playButton" class="rr-primary-button" type="button">Start rescue <span>›</span></button>
+      <button id="chooseLevelButton" class="rr-text-button" type="button">Choose a level</button>
+      <small>No payment. An adult unlocks the full journey after the guest levels.</small>
+    </section>
+  </div>
+
+  <div id="pauseOverlay" class="rr-overlay" role="dialog" aria-modal="true" aria-labelledby="pauseTitle" hidden>
+    <section class="rr-modal rr-small-modal">
+      <span class="rr-modal-icon">🌴</span><p class="rr-eyebrow">Rescue paused</p><h2 id="pauseTitle">Taking an island break?</h2>
+      <p>The timer and reef are safely paused.</p>
+      <button id="resumeButton" class="rr-primary-button" type="button">Keep rescuing</button>
+      <button id="pauseRestartButton" class="rr-text-button" type="button">Restart mission</button>
+    </section>
+  </div>
+
+  <div id="resultOverlay" class="rr-overlay" role="dialog" aria-modal="true" aria-labelledby="resultTitle" hidden>
+    <section class="rr-modal rr-result-card">
+      <span id="resultIcon" class="rr-modal-icon">🏅</span><p id="resultKicker" class="rr-eyebrow">Mission complete</p>
+      <h2 id="resultTitle">Reef rescued!</h2>
+      <p id="resultMessage">Beautiful work, Reef Ranger.</p>
+      <div class="rr-result-score"><span>Mission score</span><strong id="finalScore">0</strong></div>
+      <div class="rr-result-stats"><div><small>Best combo</small><b id="finalCombo">×1</b></div><div><small>Rubbish cleared</small><b id="finalCleared">0</b></div><div><small>Stamp</small><b id="finalStamp">+1</b></div></div>
+      <div id="learnReward" class="rr-learn-reward"><b>🌊 Reef fact unlocked</b><span id="resultFact">Healthy reefs protect Caribbean shores from strong waves.</span></div>
+      <button id="nextButton" class="rr-primary-button" type="button">Next mission <span>›</span></button>
+      <button id="retryButton" class="rr-text-button" type="button">Try again</button>
+    </section>
+  </div>
+
+  <div id="levelsOverlay" class="rr-overlay" role="dialog" aria-modal="true" aria-labelledby="levelsTitle" hidden>
+    <section class="rr-modal rr-levels-modal">
+      <div class="rr-modal-head"><div><p class="rr-eyebrow">Caribbean reef journey</p><h2 id="levelsTitle">100 rescue missions</h2></div><button id="closeLevelsButton" class="rr-close-button" type="button" aria-label="Close">×</button></div>
+      <p>Complete missions to unlock the next stop. Every ten levels brings a new Caribbean reef zone and conservation lesson.</p>
+      <div id="levelGrid" class="rr-level-grid" aria-label="Level selection"></div>
+    </section>
+  </div>
+
+  <script src="../../platform.js" defer></script>
+  <script src="./reef.js" defer></script>
+</body>
+</html>
